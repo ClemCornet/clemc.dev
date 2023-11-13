@@ -14,7 +14,7 @@
     "@astrojs/react": "^2.3.2",
     "@astrojs/tailwind": "^4.0.0",
     "@nanostores/react": "^0.7.1",
-    "@types/react": "^18.0.21",
+    "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.7",
     "astro": "^2.10.12",
     "nanostores": "^0.9.3",
