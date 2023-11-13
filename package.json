@@ -27,7 +27,7 @@
     "@iconify/json": "^2.2.61",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
-    "prettier": "^2.8.7",
+    "prettier": "^3.1.0",
     "prettier-plugin-astro": "^0.10.0",
     "unplugin-icons": "^0.16.5"
   }
