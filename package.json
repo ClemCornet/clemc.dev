@@ -17,7 +17,7 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.2.7",
     "astro": "^2.10.12",
-    "nanostores": "^0.9.3",
+    "nanostores": "^0.9.5",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
