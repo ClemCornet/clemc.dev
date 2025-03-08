@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck": "npx nuxi typecheck",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@iconify-json/iconoir": "^1.2.3",
