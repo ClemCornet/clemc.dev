@@ -1,14 +1,12 @@
 <script setup lang="ts">
-type Props = {
+withDefaults(defineProps<{
   class?: string | null
-  code: string
+  code?: string
   filename?: string | null
   highlights?: number[]
   language?: string | null
   meta?: string | null
-}
-
-withDefaults(defineProps<Props>(), {
+}>(), {
   class: null,
   code: '',
   filename: null,
@@ -51,8 +49,8 @@ defineOptions({
       text-sm
       dark:border-slate-200/20
       dark:bg-gray-800/40`, {
-        [$props.class as string]: true,
-        'mt-0 rounded-t-none': $props.filename,
+      [$props.class as string]: true,
+      'mt-0 rounded-t-none': $props.filename,
     }]"
   >
     <slot />

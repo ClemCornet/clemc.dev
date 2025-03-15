@@ -6,7 +6,7 @@ export default withNuxt(
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.vue'],
     rules: {
-      'tailwindcss/no-custom-classname': 'off',
+      // 'tailwindcss/no-custom-classname': 'off',
       'max-params': [
         'error',
         {
@@ -14,8 +14,7 @@ export default withNuxt(
         },
       ],
     },
-  },
-).prepend({
+  }).prepend({
   rules: {
     'vue/define-emits-declaration': ['error', 'type-based'],
     'vue/define-props-declaration': ['error', 'type-based'],

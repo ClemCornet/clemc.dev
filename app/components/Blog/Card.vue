@@ -14,7 +14,7 @@ defineProps<{
       <h3 class="mb-1 text-lg font-semibold underline underline-offset-4">
         {{ blogPost.title }}
       </h3>
-      <p class="text-md mb-1 text-gray-600 dark:text-gray-200">
+      <p class="mb-1 text-gray-600 dark:text-gray-200">
         {{ blogPost.description }}
       </p>
       <div class="flex gap-x-2 text-sm font-light text-gray-500 dark:text-gray-400">

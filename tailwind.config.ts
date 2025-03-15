@@ -1,7 +1,7 @@
-import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
+// import type { Config } from 'tailwindcss'
+// import defaultTheme from 'tailwindcss/defaultTheme'
 
-export default <Partial<Config>>{
+export default {
   content: [
     './components/**/*.{vue,js,ts}',
     './layouts/**/*.vue',
@@ -19,7 +19,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter'],
       },
     },
   },

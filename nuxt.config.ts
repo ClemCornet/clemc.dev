@@ -2,7 +2,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
@@ -27,6 +26,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   colorMode: {
     preference: 'light',
     fallback: 'light',
@@ -40,12 +40,12 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      theme: {
-        default: 'github-light',
-        dark: 'tokyo-night',
-      },
-    },
+    // highlight: {
+    //   theme: {
+    //     default: 'github-light',
+    //     dark: 'tokyo-night',
+    //   },
+    // },
   },
 
   runtimeConfig: {
@@ -59,9 +59,11 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
   },
+
   future: {
     compatibilityVersion: 4,
   },
+
   experimental: {
     typedPages: true,
   },

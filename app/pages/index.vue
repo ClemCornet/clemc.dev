@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { BlogPost } from '~/types'
 
-const { data: posts } = useAsyncData('home-posts', () =>
-  queryContent<BlogPost>('/blog')
-    .sort({ date: -1 })
-    .limit(2)
-    .find(),
-)
+// const { data: posts } = useAsyncData('home-posts', () =>
+//   queryContent<BlogPost>('/blog')
+//     .sort({ date: -1 })
+//     .limit(2)
+//     .find(),
+// )
 </script>
 
 <template>
@@ -52,10 +52,10 @@ const { data: posts } = useAsyncData('home-posts', () =>
             />
           </div>
         </div>
-        <HomeBlogFeatured
+        <!-- <HomeBlogFeatured
           v-if="posts"
           :posts="posts"
-        />
+        /> -->
       </div>
     </main>
   </UContainer>

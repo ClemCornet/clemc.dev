@@ -25,6 +25,8 @@ const socials = [
     name: 'Linkedin',
     url: 'https://linkedin.com/in/clem-cornet',
   }]
+
+  const currentYear = new Date().getFullYear()
 </script>
 
 <template>
@@ -72,7 +74,7 @@ const socials = [
         Currently offline
       </p>
       <p class="text-sm text-neutral-500">
-        © 2024 Clément Cornet.
+        © {{ currentYear }} Clément Cornet.
       </p>
     </footer>
   </UContainer>
