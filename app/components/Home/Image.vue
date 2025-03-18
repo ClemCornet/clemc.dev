@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { useMouseInElement } from '@vueuse/core'
 
 const { isMobile } = useDevice()
@@ -12,10 +12,11 @@ const image = computed(() => {
 
 const target = ref(null)
 const { x: elementX, y: elementY } = useMouseInElement(target)
-</script>
+</script> -->
 
 <template>
-  <div
+  <USkeleton class="h-auto" />
+  <!-- <div
     ref="target"
     class="
     background-gradient
@@ -41,17 +42,14 @@ const { x: elementX, y: elementY } = useMouseInElement(target)
       '--x': `${elementX}px`,
       '--y': `${elementY}px`,
     }"
-  >
-    <NuxtImg
-      class="overflow-hidden rounded-lg"
-      densities="x1 x2"
-      fit="cover"
-      :height="image.size.h"
-      loading="lazy"
-      :src="image.src"
-      :width="image.size.w"
-    />
-  </div>
+  > -->
+  <!-- <NuxtImg
+    class="overflow-hidden rounded-lg"
+    densities="x1 x2"
+    fit="cover"
+    :placeholder="[50, 25]"
+  /> -->
+  <!-- </div> -->
 </template>
 
 <style scoped>

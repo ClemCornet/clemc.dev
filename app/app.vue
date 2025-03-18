@@ -9,9 +9,11 @@ const layout = computed(() => {
 </script>
 
 <template>
-  <NuxtLayout :name="layout">
-    <NuxtPage />
-  </NuxtLayout>
+  <UApp>
+    <NuxtLayout :name="layout">
+      <NuxtPage />
+    </NuxtLayout>
+  </UApp>
 </template>
 
 <style lang="postcss">

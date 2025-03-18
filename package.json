@@ -16,12 +16,12 @@
     "@iconify-json/iconoir": "^1.2.7",
     "@nuxt/content": "^3.3.0",
     "@nuxt/eslint": "^1.2.0",
-    "@nuxt/fonts": "^0.10.3",
-    "@nuxt/image": "^1.9.0",
-    "@nuxt/ui": "^2.21.1",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "^3.0.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
     "@tailwindcss/vite": "^4.0.14",
+    "better-sqlite3": "^11.9.0",
     "date-fns": "^4.1.0",
     "eslint": "^9.0.0",
     "nuxt": "^3.16.0",
@@ -30,10 +30,14 @@
   },
   "devDependencies": {
     "@nuxthq/studio": "^2.2.1",
-    "eslint-plugin-tailwindcss": "^3.18.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "vue-tsc": "^2.2.8"
   },
-  "packageManager": "pnpm@10.6.1"
+  "packageManager": "pnpm@10.6.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  }
 }

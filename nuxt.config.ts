@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
     '@nuxt/image',
-    '@nuxt/fonts',
     '@nuxthq/studio',
     '@nuxtjs/device',
   ],
@@ -19,7 +18,6 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -28,6 +26,8 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  css: ['~/assets/css/main.css'],
 
   colorMode: {
     preference: 'light',
@@ -39,15 +39,6 @@ export default defineNuxtConfig({
     classSuffix: '',
     storage: 'localStorage',
     storageKey: 'nuxt-color-mode',
-  },
-
-  content: {
-    // highlight: {
-    //   theme: {
-    //     default: 'github-light',
-    //     dark: 'tokyo-night',
-    //   },
-    // },
   },
 
   runtimeConfig: {
@@ -83,4 +74,5 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+
 })
