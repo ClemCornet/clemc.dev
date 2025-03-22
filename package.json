@@ -31,9 +31,9 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "vue-tsc": "2.2.0"
+    "vue-tsc": "2.2.8"
   },
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.6.5",
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
