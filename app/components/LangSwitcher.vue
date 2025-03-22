@@ -14,9 +14,11 @@ defineEmits<{
     text="Toggle lang"
   >
     <UButton
-      color="white"
+      class="hover:cursor-pointer"
+      color="primary"
       size="sm"
-      variant="solid"
+      square
+      variant="outline"
       @click="$emit('changeLocale')"
     >
       {{ lang.toUpperCase() }}

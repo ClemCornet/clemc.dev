@@ -12,11 +12,13 @@ defineEmits<{
       text="Toggle color mode"
     >
       <UButton
-        color="white"
+        class="hover:cursor-pointer"
+        color="primary"
         :icon="$colorMode.value === 'light'
           ? `iconoir:sun-light` : `iconoir:half-moon`"
         size="sm"
-        variant="solid"
+        square
+        variant="outline"
         @click="$emit('toggleTheme')"
       />
     </UTooltip>

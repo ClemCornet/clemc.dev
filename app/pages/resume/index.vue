@@ -1,10 +1,7 @@
 <template>
   <UContainer
-    :ui="{
-      base: 'w-full flex-1',
-      constrained: 'max-w-2xl',
-      padding: 'py-12 px-4 sm:px-6 lg:px-0',
-    }"
+    as="main"
+    class="flex flex-1 mx-auto"
   >
     <main>
       <h1>Resume</h1>

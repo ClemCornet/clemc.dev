@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
     '@nuxt/image',
-    '@nuxthq/studio',
     '@nuxtjs/device',
   ],
 

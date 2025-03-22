@@ -11,7 +11,7 @@ defineProps<{
     <h3 class="mb-4 text-sm uppercase tracking-wide text-gray-400">
       Featured posts
     </h3>
-    <ul>
+    <!-- <ul>
       <li
         v-for="post in posts"
         :key="post._id"
@@ -20,6 +20,6 @@ defineProps<{
           :blog-post="post"
         />
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>

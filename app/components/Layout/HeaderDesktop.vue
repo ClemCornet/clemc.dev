@@ -3,11 +3,13 @@ const links = [{
   name: 'blog',
   text: 'Blog',
   icon: 'i-iconoir-edit',
+  hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
 },
 {
   name: 'resume',
   text: 'Resume',
   icon: 'i-iconoir-user-bag',
+  hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
 }]
 
 const lang = ref<'en' | 'fr'>('en')
@@ -39,22 +41,22 @@ defineShortcuts({
       Clem C
     </nuxt-link>
     <nav class="flex items-center justify-between">
-      <ul class="flex justify-between">
+      <ul class="flex justify-between gap-2">
         <li
           v-for="link in links"
           :key="link.name"
         >
           <ULink
-            active-class="text-gray-800 dark:text-gray-100"
-            class="mr-4 flex items-center"
-            inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+            active-class="font-semibold text-gray-800 dark:text-gray-100"
+            :class="['mr-4 flex items-center hover:font-medium', link.hoverClass]"
             :to="{ name: link.name }"
           >
             <UIcon
-              class="mr-1 size-4"
+              :class="'mr-1 size-5'"
               :name="link.icon"
             />
             <span>{{ link.text }}</span>
+
           </ULink>
         </li>
       </ul>

@@ -21,7 +21,7 @@ const formattedCategories = computed(() => {
     <UButton
       v-for="category in formattedCategories"
       :key="category"
-      color="gray"
+      color="primary"
       :variant="modelValue === category ? 'solid' : 'ghost'"
       @click="$emit('update:modelValue', category as UICategories)"
     >
