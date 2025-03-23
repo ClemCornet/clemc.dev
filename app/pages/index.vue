@@ -1,10 +1,10 @@
 <template>
   <UContainer
     as="main"
-    class="flex w-full flex-1 gap-8 py-24"
+    class="flex flex-1 w-full gap-24"
   >
     <div class="flex flex-1 w-1/2">
-      <USkeleton class="w-full h-auto" />
+      <HomeImage />
     </div>
     <div class="flex items-center w-1/2">
       <HomeSelfPresentation />

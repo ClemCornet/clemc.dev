@@ -16,7 +16,7 @@ defineShortcuts({
 </script>
 
 <template>
-  <div class="flex h-screen flex-col overflow-auto">
+  <div class="flex h-screen min-h-screen flex-col overflow-auto">
     <LayoutHeaderMobile />
     <slot />
     <LayoutFooterMobile />

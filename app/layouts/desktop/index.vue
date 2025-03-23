@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div class="flex h-screen min-h-screen flex-col justify-between">
     <LayoutHeaderDesktop />
     <slot />
     <LayoutFooterDesktop />

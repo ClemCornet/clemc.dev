@@ -9,7 +9,7 @@ const layout = computed(() => {
 </script>
 
 <template>
-  <UApp>
+  <UApp :scroll-body="false">
     <NuxtLayout :name="layout">
       <NuxtPage />
     </NuxtLayout>
