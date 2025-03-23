@@ -28,14 +28,11 @@ defineShortcuts({
   backdrop-blur
   backdrop-brightness-100
   after:absolute
-  after:inset-0
   after:-z-10
+  after:inset-0
   after:border-b
   after:border-neutral-600/20
-  after:bg-white/80
-  dark:backdrop-brightness-50
   dark:after:border-neutral-200/20
-  dark:after:bg-slate-800/40
   "
   >
     <nuxt-link

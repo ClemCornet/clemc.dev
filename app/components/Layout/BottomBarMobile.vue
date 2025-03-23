@@ -31,14 +31,11 @@ const links = [
   backdrop-blur
   backdrop-brightness-100
   after:absolute
-  after:inset-0
   after:-z-10
-  after:border-b
+  after:inset-0
+  after:border-t
   after:border-neutral-600/20
-  after:bg-white/80
-  dark:backdrop-brightness-50
   dark:after:border-neutral-200/20
-  dark:after:bg-slate-800/40
   "
   >
     <ul class="flex flex-1 items-center justify-around">

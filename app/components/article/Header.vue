@@ -30,10 +30,7 @@ defineProps<{
         {{ post.description }}
       </p>
     </div>
-    <UDivider
-      class="my-2"
-      :ui="{ border: { base: 'flex border-neutral-600/20 dark:border-neutral-200/30' } }"
-    />
+    <USeparator class="my-2" />
     <div class="flex gap-x-2 text-sm font-light text-gray-400 dark:text-gray-400">
       <div class="flex items-center">
         <UIcon

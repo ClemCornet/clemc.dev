@@ -36,21 +36,22 @@ const currentYear = computed(() => new Date().getFullYear())
 <template>
   <UContainer
     as="footer"
-    class="flex w-full justify-between py-4"
+    class="
+    flex
+    w-full
+    justify-between
+    py-4
+    relative
+    after:absolute
+    after:w-full
+    after:top-0
+    after:h-[1px]
+    after:bg-neutral-600/20
+    dark:after:bg-neutral-200/20
+    "
   >
     <div class="flex flex-1 flex-col">
       <nav class="mb-2 w-1/3">
-        <!-- <ol class="flex justify-between">
-          <ULink
-            v-for="link in links"
-            :key="link.name"
-            active-class="text-gray-800 dark:text-gray-100"
-            inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
-            :to="{ name: link.name }"
-          >
-            {{ link.text }}
-          </ULink>
-        </ol> -->
         <ul class="flex justify-between">
           <li
             v-for="link in links"
