@@ -12,8 +12,8 @@ const links = [
     icon: 'i-iconoir-edit',
   },
   {
-    name: 'resume',
-    text: 'Resume',
+    name: 'about',
+    text: 'About',
     icon: 'i-iconoir-user-bag',
   }]
 </script>

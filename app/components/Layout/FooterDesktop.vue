@@ -2,14 +2,17 @@
 const links = [{
   name: 'index',
   text: 'Home',
+  hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
 },
 {
   name: 'blog',
   text: 'Blog',
+  hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
 },
 {
-  name: 'resume',
-  text: 'Resume',
+  name: 'about',
+  text: 'About',
+  hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
 }]
 
 const socials = [
@@ -37,7 +40,7 @@ const currentYear = computed(() => new Date().getFullYear())
   >
     <div class="flex flex-1 flex-col">
       <nav class="mb-2 w-1/3">
-        <ol class="flex justify-between">
+        <!-- <ol class="flex justify-between">
           <ULink
             v-for="link in links"
             :key="link.name"
@@ -47,7 +50,21 @@ const currentYear = computed(() => new Date().getFullYear())
           >
             {{ link.text }}
           </ULink>
-        </ol>
+        </ol> -->
+        <ul class="flex justify-between">
+          <li
+            v-for="link in links"
+            :key="link.name"
+          >
+            <ULink
+              active-class="font-semibold text-gray-800 dark:text-gray-100"
+              :class="['mr-4 flex items-center hover:font-medium', link.hoverClass]"
+              :to="{ name: link.name }"
+            >
+              {{ link.text }}
+            </ULink>
+          </li>
+        </ul>
       </nav>
       <p class="text-sm text-gray-400 dark:text-gray-500">
         Currently offline

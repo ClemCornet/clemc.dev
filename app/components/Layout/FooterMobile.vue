@@ -8,8 +8,8 @@ const links = [{
   text: 'Blog',
 },
 {
-  name: 'resume',
-  text: 'Resume',
+  name: 'about',
+  text: 'About',
 }]
 
 const socials = [
@@ -26,7 +26,7 @@ const socials = [
     url: 'https://linkedin.com/in/clem-cornet',
   }]
 
-  const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear()
 </script>
 
 <template>

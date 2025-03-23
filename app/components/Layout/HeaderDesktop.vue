@@ -6,8 +6,8 @@ const links = [{
   hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
 },
 {
-  name: 'resume',
-  text: 'Resume',
+  name: 'about',
+  text: 'About',
   icon: 'i-iconoir-user-bag',
   hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
 }]
@@ -31,7 +31,22 @@ defineShortcuts({
 <template>
   <UContainer
     as="header"
-    class="flex justify-between w-full py-8"
+    class="
+    flex
+    justify-between
+    w-full
+    pt-8
+    px-8
+    pb-4
+    relative
+    after:absolute
+    after:w-screen
+    after:bottom-0
+    after:h-[1px]
+    after:left-[calc(50%-50vw)]
+    after:bg-neutral-600/20
+    dark:after:bg-neutral-200/20
+    "
   >
     <nuxt-link
       active-class="text-gray-800 dark:text-gray-100"
