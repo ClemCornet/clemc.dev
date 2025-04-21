@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const props = defineProps<{
+defineProps<{
   src: string
   alt: string
   dimensions: {
@@ -7,38 +7,32 @@ const props = defineProps<{
     h: number
   }
   placeholder?: {
-    backgroundClass: string
+    class?: string
   }
 }>()
 
 const loaded = ref(false)
-function onLoad() {
+const onLoad = () => {
   loaded.value = true
 }
-
-const aspectRatio = computed(() => {
-  return `${(props.dimensions.h / props.dimensions.w) * 100}%`
-})
 </script>
 
 <template>
   <ClientOnly>
     <div
-      class="relative w-full overflow-hidden bg-gray-100 rounded-lg"
-      :style="{ paddingTop: aspectRatio }"
+      class="relative w-full h-full overflow-hidden rounded-lg"
+      :style="{ aspectRatio: `${dimensions.w} / ${dimensions.h}` }"
     >
-      <img
+      <div
         alt="placeholder"
-        :class="['absolute inset-0 w-full h-full object-cover filter blur-md scale-105 transition-opacity duration-500', placeholder?.backgroundClass]"
-      >
+        class="absolute inset-0 w-full h-full filter blur-md scale-105"
+        :class="[placeholder?.class ?? '']"
+      />
 
       <img
         :alt="alt"
-        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1500 border border-teal-200 rounded-lg"
-        :class="{
-          'opacity-0': !loaded,
-          'opacity-100': loaded,
-        }"
+        class="absolute inset-0 w-full h-full object-cover border-[0.5px] border-neutral-900 dark:border-neutral-500 rounded-lg transition-all duration-1500"
+        :class="loaded ? 'opacity-100' : 'opacity-0'"
         :src="src"
         @load="onLoad"
       >
