@@ -11,7 +11,7 @@
       "labels": ["Dependencies"],
       "groupName": "Minor dependencies",
       "matchUpdateTypes": ["minor", "pin", "digest"],
-      "prConcurrentLimit": 3,
+      "prConcurrentLimit": 3
     },
     {
       "enabled": true,
@@ -23,7 +23,8 @@
       "autoApprove": true,
       "automergeType": "pr",
       "automergeStrategy": "squash",
-      "prConcurrentLimit": 3
+      "prConcurrentLimit": 3,
+      "ignoreTests": true
     }
   ],
   "prHourlyLimit": 3
