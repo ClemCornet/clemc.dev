@@ -20,7 +20,7 @@
       "groupName": "Patch dependencies",
       "matchUpdateTypes": ["patch"],
       "automerge": true,
-      "autoApproved": true,
+      "autoApprove": true,
       "automergeStrategy": "squash",
       "automergeType": "pr",
       "prConcurrentLimit": 3
