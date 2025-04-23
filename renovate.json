@@ -22,7 +22,7 @@
       "automerge": true,
       "autoApprove": true,
       "automergeStrategy": "squash",
-      "automergeType": "pr",
+       "automergeType": "branch",
       "prConcurrentLimit": 3
     }
   ],
