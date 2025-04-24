@@ -3,17 +3,13 @@
 
 @theme static {
   --font-sans: "Inter", "sans-serif";
+  --container-8xl: 70rem;
 
-  --breakpoint-3xl: 1920px;
+  --placeholder-home-img-from: oklch(0.45 0.0475 51.52);
+  --placeholder-home-img-via: oklch(0.55 0.0116 58.07);
+  --placeholder-home-img-to: oklch(0.87 0.0043 56.37);
+}
 
-  --color-avocado-100: oklch(0.99 0 0);
-  --color-avocado-200: oklch(0.98 0.04 113.22);
-  --color-avocado-300: oklch(0.94 0.11 115.03);
-  --color-avocado-400: oklch(0.92 0.19 114.08);
-  --color-avocado-500: oklch(0.84 0.18 117.33);
-  --color-avocado-600: oklch(0.53 0.12 118.34);
-  --color-avocado-700: oklch(0.53 0.12 118.34);
-  --color-avocado-800: oklch(0.53 0.12 118.34);
-  --color-avocado-900: oklch(0.53 0.12 118.34);
-  --color-avocado-950: oklch(0.53 0.12 118.34);
+:root {
+  --ui-container: var(--container-8xl);
 }

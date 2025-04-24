@@ -18,7 +18,7 @@ const sizes = computed(() => {
     <ProgressiveImg
       alt="Profile picture"
       :dimensions="{ ...sizes }"
-      :placeholder="{ class: 'bg-radial-[at_25%_25%] from-[#6B4E3D] via-[#78716c] to-[#d6d3d1]' }"
+      :placeholder="{ class: 'bg-radial-[at_25%_25%] from-(--placeholder-home-img-from) via-(--placeholder-home-img-via) to-(--placeholder-home-img-to)' }"
       :src="imageSrc"
     />
   </div>
