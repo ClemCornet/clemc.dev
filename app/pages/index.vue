@@ -1,7 +1,7 @@
 <template>
   <UContainer
     as="main"
-    class="flex flex-col md:flex-row flex-1 w-full gap-x-16"
+    class="flex flex-col md:flex-row gap-x-16"
   >
     <div class="flex my-8 md:my-0 items-center justify-center">
       <HomeImage />
