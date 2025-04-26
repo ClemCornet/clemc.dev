@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const links = [{
   name: 'blog',
-  text: 'Blog',
+  text: 'Today I Learned',
   icon: 'i-iconoir-edit',
   hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
 },

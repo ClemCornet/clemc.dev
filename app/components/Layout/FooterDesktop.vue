@@ -6,7 +6,7 @@ const links = [{
 },
 {
   name: 'blog',
-  text: 'Blog',
+  text: 'Today I Learned',
   hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
 },
 {
@@ -51,8 +51,8 @@ const currentYear = computed(() => new Date().getFullYear())
     "
   >
     <div class="flex flex-1 flex-col">
-      <nav class="mb-2 w-1/3">
-        <ul class="flex justify-between">
+      <nav class="mb-2">
+        <ul class="flex gap-4">
           <li
             v-for="link in links"
             :key="link.name"

@@ -8,7 +8,7 @@ const links = [
 
   {
     name: 'blog',
-    text: 'Blog',
+    text: 'Today I Learned',
     icon: 'i-iconoir-edit',
   },
   {

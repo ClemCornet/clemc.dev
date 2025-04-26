@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme static {
+@theme {
   --font-sans: "Inter", "sans-serif";
   --container-8xl: 70rem;
 
