@@ -3,7 +3,7 @@
   command = "pnpm generate"
 
 [build.environment]
-  NODE_VERSION = "22"
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "/*"
