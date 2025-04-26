@@ -1,6 +1,11 @@
 <script setup lang="ts">
-const { isMobile, isDesktop } = useDevice()
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Clement Cornet` : 'Clement Cornet - Frontend Developer'
+  },
+})
 
+const { isMobile, isDesktop } = useDevice()
 const layout = computed(() => {
   if (isMobile) return 'mobile'
   if (isDesktop) return 'desktop'
