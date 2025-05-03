@@ -41,7 +41,7 @@ const currentYear = new Date().getFullYear()
           :key="link.name"
         >
           <ULink
-            active-class="font-semibold text-gray-800 dark:text-gray-100"
+            active-class="font-semibold text-neutral-800 dark:text-neutral-100"
             :to="{ name: link.name }"
           >
             {{ link.text }}
@@ -63,8 +63,8 @@ const currentYear = new Date().getFullYear()
         </ULink>
       </li>
     </ul>
-    <p class="mb-1 text-sm text-gray-400 dark:text-gray-500">
-      Currently offline
+    <p class="mb-1 text-sm text-neutral-400 dark:text-neutral-500">
+      Chillin in Paris
     </p>
     <p class="text-sm text-neutral-500">
       © {{ currentYear }} Clément Cornet.

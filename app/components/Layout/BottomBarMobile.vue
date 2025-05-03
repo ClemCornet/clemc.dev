@@ -44,9 +44,9 @@ const links = [
         :key="link.name"
       >
         <ULink
-          active-class="text-gray-800 dark:text-gray-100"
+          active-class="text-neutral-800 dark:text-neutral-100"
           class="mr-4 flex flex-col items-center justify-center text-xs"
-          inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+          inactive-class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
           :to="{ name: link.name }"
         >
           <UIcon

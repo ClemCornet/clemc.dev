@@ -52,13 +52,13 @@ const currentYear = computed(() => new Date().getFullYear())
   >
     <div class="flex flex-1 flex-col">
       <nav class="mb-2">
-        <ul class="flex gap-4">
+        <ul class="flex gap-2">
           <li
             v-for="link in links"
             :key="link.name"
           >
             <ULink
-              active-class="font-semibold text-gray-800 dark:text-gray-100"
+              active-class="font-semibold text-neutral-800 dark:text-neutral-100"
               :class="['mr-4 flex items-center hover:font-medium', link.hoverClass]"
               :to="{ name: link.name }"
             >
@@ -67,9 +67,15 @@ const currentYear = computed(() => new Date().getFullYear())
           </li>
         </ul>
       </nav>
-      <p class="text-sm text-gray-400 dark:text-gray-500">
-        Currently offline
-      </p>
+      <div class="text-neutral-400 dark:text-neutral-500 flex items-center gap-1">
+        <UIcon
+          class="size-4"
+          name="i-iconoir-map-pin"
+        />
+        <p class="text-sm">
+          Chillin in Paris
+        </p>
+      </div>
     </div>
     <div class="flex flex-1 flex-col items-end">
       <nav class="mb-2 w-1/3">
@@ -77,9 +83,9 @@ const currentYear = computed(() => new Date().getFullYear())
           <ULink
             v-for="link in socials"
             :key="link.name"
-            active-class="text-gray-800 dark:text-gray-100"
+            active-class="text-neutral-800 dark:text-neutral-100"
             external
-            inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+            inactive-class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
             target="_blank"
             :to="link.url"
           >

@@ -16,7 +16,7 @@ useSeoMeta({
       <h1 class="mb-2 text-2xl font-semibold">
         Today I learned
       </h1>
-      <p class="ml-1 text-sm text-gray-500 dark:text-gray-400">
+      <p class="ml-1 text-sm text-neutral-500 dark:text-neutral-400">
         Discover daily insights and lessons from my journey as a frontend developer, covering JavaScript, TypeScript, Vue.js, Nuxt.js, and more. 🎢
       </p>
       <ul class="mt-12">

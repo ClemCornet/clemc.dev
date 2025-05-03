@@ -36,7 +36,7 @@ defineShortcuts({
   "
   >
     <nuxt-link
-      active-class="text-gray-800 dark:text-gray-100"
+      active-class="text-neutral-800 dark:text-neutral-100"
       class="text-xl font-extrabold"
       to="/"
     >

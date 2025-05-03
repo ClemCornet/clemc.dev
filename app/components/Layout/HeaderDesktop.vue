@@ -49,7 +49,7 @@ defineShortcuts({
     "
   >
     <nuxt-link
-      active-class="text-gray-800 dark:text-gray-100"
+      active-class="text-neutral-800 dark:text-neutral-100"
       class="text-xl font-extrabold"
       to="/"
     >
@@ -62,8 +62,8 @@ defineShortcuts({
           :key="link.name"
         >
           <ULink
-            active-class="font-semibold text-gray-800 dark:text-gray-100"
-            :class="['mr-4 flex items-center hover:font-medium', link.hoverClass]"
+            active-class="text-neutral-800 dark:text-neutral-100"
+            :class="['font-semibold mr-4 flex items-center', link.hoverClass]"
             :to="{ name: link.name }"
           >
             <UIcon
@@ -71,7 +71,6 @@ defineShortcuts({
               :name="link.icon"
             />
             <span>{{ link.text }}</span>
-
           </ULink>
         </li>
       </ul>
