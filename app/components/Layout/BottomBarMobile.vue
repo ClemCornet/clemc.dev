@@ -7,8 +7,8 @@ const links = [
   },
 
   {
-    name: 'blog',
-    text: 'Today I Learned',
+    name: 'articles',
+    text: 'Articles',
     icon: 'i-iconoir-edit',
   },
   {

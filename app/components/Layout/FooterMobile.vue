@@ -4,7 +4,7 @@ const links = [{
   text: 'Home',
 },
 {
-  name: 'blog',
+  name: 'articles',
   text: 'Blog',
 },
 {

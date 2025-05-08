@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const description = `Discover daily insights and lessons from my journey as a frontend developer, covering JavaScript, TypeScript, Vue.js, Nuxt.js, and more.`
 useSeoMeta({
-  title: 'Today I learned',
+  title: 'Articles',
   ogTitle: 'Clement Cornet - Frontend Developer',
   description,
 })

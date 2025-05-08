@@ -5,8 +5,8 @@ const links = [{
   hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
 },
 {
-  name: 'blog',
-  text: 'Today I Learned',
+  name: 'articles',
+  text: 'Articles',
   hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
 },
 {
@@ -38,16 +38,9 @@ const currentYear = computed(() => new Date().getFullYear())
     as="footer"
     class="
     flex
-    w-full
     justify-between
-    py-4
-    relative
-    after:absolute
-    after:w-full
-    after:top-0
-    after:h-[1px]
-    after:bg-neutral-600/20
-    dark:after:bg-neutral-200/20
+    py-4 px-0 lg:px-0
+    border-t border-neutral-600/20 dark:border-neutral-200/30
     "
   >
     <div class="flex flex-1 flex-col">
