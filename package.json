@@ -33,7 +33,7 @@
     "lint-staged": "^15.5.0",
     "vue-tsc": "2.2.10"
   },
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.11.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
