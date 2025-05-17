@@ -23,13 +23,13 @@ const TIMELINE = [
   },
   {
     date: 'janv 2021 to sep 2024',
-    title: 'Mid Frontend Developer',
+    title: 'Frontend Developer',
     company: 'Le Collectionist',
     urlCompany: 'https://lecollectionist.com',
   },
   {
     date: 'janv 2020 to dec 2020',
-    title: 'Junior Frontend Developer',
+    title: 'Frontend Developer',
     company: 'Meero',
     urlCompany: 'https://meero.com',
   },
@@ -43,9 +43,15 @@ const TIMELINE = [
   >
     <div class="flex flex-col gap-8 mx-auto w-full max-w-xl px-0">
       <section class="flex flex-col gap-4">
-        <h1 class="mb-2 text-2xl font-semibold">
-          About me
-        </h1>
+        <div class="flex items-center gap-4">
+          <UAvatar
+            size="xl"
+            src="https://github.com/clemcrntptwl.png"
+          />
+          <h1 class="text-2xl font-semibold">
+            About me
+          </h1>
+        </div>
         <p>With a strong foundation in front-end development, I bring a technical expertise to building scalable and maintainable interfaces.</p>
 
         <p>
