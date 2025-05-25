@@ -63,11 +63,17 @@ const currentYear = new Date().getFullYear()
         </ULink>
       </li>
     </ul>
-    <p class="mb-1 text-sm text-neutral-400 dark:text-neutral-500">
-      Chillin in Paris
-    </p>
-    <p class="text-sm text-neutral-500">
-      © {{ currentYear }} Clément Cornet.
-    </p>
+    <div class="text-neutral-400 dark:text-neutral-500 flex flex-col gap-2">
+      <p>
+        <UIcon
+          class="size-4"
+          name="i-iconoir-map-pin"
+        />
+        Chillin in Paris
+      </p>
+      <p class="text-sm text-neutral-500">
+        © {{ currentYear }} Clément Cornet.
+      </p>
+    </div>
   </UContainer>
 </template>

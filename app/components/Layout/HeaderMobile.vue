@@ -8,11 +8,6 @@ const colorMode = useColorMode()
 const toggleTheme = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
-
-defineShortcuts({
-  t: () => toggleTheme(),
-  l: () => changeLocale(),
-})
 </script>
 
 <template>
