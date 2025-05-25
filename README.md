@@ -1,42 +1,59 @@
-# Content v2 Minimal Starter
+# clemc.dev - Personal Portfolio & Blog
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+My personal portfolio and blog website showcasing my work as a frontend developer. Visit [clemc.dev](https://clemc.dev) to see it live.
 
-## Setup
+## 🛠️ Tech Stack
 
-Make sure to install the dependencies:
+- **Framework:** [Nuxt 3](https://nuxt.com/) - Vue.js framework
+- **Content Management:** [Nuxt Content](https://content.nuxt.com/) for blog posts and markdown handling
+- **Styling:**
+  - [Nuxt UI](https://ui.nuxt.com/) for component library
+  - [TailwindCSS](https://tailwindcss.com/) for styling
+- **Type Safety:**
+  - TypeScript for type checking
+  - Vue-tsc for Vue component type checking
+- **Quality Assurance:**
+  - ESLint for code linting
+  - Husky for git hooks
+  - Lint-staged for running checks on staged files
 
-```bash
-# yarn
-yarn install
+## 🌟 Features
 
-# npm
-npm install
+- Responsive design with mobile-first approach
+- SEO optimized with Nuxt's built-in features
+- Blog with markdown support
+- Progressive image loading
+- Dark/Light theme switcher
+- Performance optimized
+- TypeScript support
 
-# pnpm
-pnpm install
-```
+## 🚀 Getting Started
 
-## Development Server
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/clemc.dev.git
+   cd clemc.dev
+   ```
 
-Start the development server on http://localhost:3000
+2. Install dependencies:
+   ```bash
+   # Using pnpm (recommended)
+   pnpm install
+   ```
 
-```bash
-npm run dev
-```
+3. Start development server:
+   ```bash
+   pnpm dev
+   ```
 
-## Production
+## 📦 Building for Production
 
-Build the application for production:
+1. Build the application:
+   ```bash
+   pnpm generate
+   ```
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+2. Preview production build:
+   ```bash
+   pnpm preview
+   ```
