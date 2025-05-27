@@ -1,16 +1,23 @@
 <script setup lang="ts">
-const links = [{
-  name: 'articles',
-  text: 'Articles',
-  icon: 'i-iconoir-edit',
-  hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
-},
-{
-  name: 'about',
-  text: 'About',
-  icon: 'i-iconoir-user-bag',
-  hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
-}]
+const links = [
+  {
+    name: 'index',
+    text: 'Home',
+    icon: 'i-iconoir-home',
+    hoverClass: 'hover:decoration-solid',
+  },
+  {
+    name: 'articles',
+    text: 'Articles',
+    icon: 'i-iconoir-edit',
+    hoverClass: 'hover:decoration-wavy',
+  },
+  {
+    name: 'about',
+    text: 'About',
+    icon: 'i-iconoir-user-bag',
+    hoverClass: 'hover:decoration-solid',
+  }]
 
 const lang = ref<'en' | 'fr'>('en')
 const changeLocale = () => {
@@ -63,14 +70,17 @@ defineShortcuts({
         >
           <ULink
             active-class="text-neutral-800 dark:text-neutral-100"
-            :class="['font-semibold mr-4 flex items-center', link.hoverClass]"
+            :class="['font-semibold mr-4 flex items-center underline-offset-2 hover:underline', link.hoverClass]"
             :to="{ name: link.name }"
           >
-            <UIcon
-              :class="'mr-1 size-5'"
-              :name="link.icon"
-            />
-            <span>{{ link.text }}</span>
+            <template #default="{ active }">
+              <UIcon
+                v-if="active"
+                class="mr-1 size-4"
+                :name="link.icon"
+              />
+              <span class="mt-0.5">{{ link.text }}</span>
+            </template>
           </ULink>
         </li>
       </ul>
