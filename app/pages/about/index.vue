@@ -28,7 +28,7 @@ const TIMELINE = [
     urlCompany: 'https://lecollectionist.com',
   },
   {
-    date: 'janv 2020 to dec 2020',
+    date: 'janv 2019 to dec 2020',
     title: 'Frontend Developer',
     company: 'Meero',
     urlCompany: 'https://meero.com',
@@ -41,6 +41,7 @@ const TIMELINE = [
     as="main"
     class="flex flex-1 flex-col sm:mt-6 mt-12"
   >
+    <div class="gradient" />
     <div class="flex flex-col gap-8 mx-auto w-full max-w-xl px-0">
       <section class="flex flex-col gap-4">
         <div class="flex items-center gap-4">
@@ -104,7 +105,7 @@ const TIMELINE = [
             :class="[
               'relative flex flex-col gap-y-1.5 relative !mb-10 ms-4 p-2 rounded-lg border-[0.5px]',
               { 'bg-neutral-100 dark:bg-neutral-800 border-neutral-600 dark:border-neutral-200': item.present },
-              { 'border-neutral-400 dark:border-neutral-400': !item.present },
+              { 'bg-neutral-100 dark:bg-neutral-900 border-neutral-400 dark:border-neutral-400': !item.present },
             ]"
           >
             <div
@@ -133,3 +134,19 @@ const TIMELINE = [
     </div>
   </UContainer>
 </template>
+
+<style scoped>
+.gradient {
+  background: radial-gradient(40% 80% at 50% 50%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
+  border-radius: 50%;
+  filter: blur(150px);
+  height: 30vh;
+  left: 0;
+  opacity: .2;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+  width: 100%;
+  z-index: -10;
+}
+</style>

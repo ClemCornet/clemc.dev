@@ -1,17 +1,4 @@
 <script setup lang="ts">
-const links = [{
-  name: 'index',
-  text: 'Home',
-},
-{
-  name: 'articles',
-  text: 'Blog',
-},
-{
-  name: 'about',
-  text: 'About',
-}]
-
 const socials = [
   {
     name: 'X',
@@ -34,22 +21,7 @@ const currentYear = new Date().getFullYear()
     as="footer"
     class="w-full border-t border-neutral-600/20 dark:border-neutral-200/30"
   >
-    <nav>
-      <ul class="my-4 flex flex-col">
-        <li
-          v-for="link in links"
-          :key="link.name"
-        >
-          <ULink
-            active-class="font-semibold text-neutral-800 dark:text-neutral-100"
-            :to="{ name: link.name }"
-          >
-            {{ link.text }}
-          </ULink>
-        </li>
-      </ul>
-    </nav>
-    <ul class="my-4 flex flex-col">
+    <ul class="flex flex-col gap-1 my-4">
       <li
         v-for="link in socials"
         :key="link.name"
@@ -63,7 +35,7 @@ const currentYear = new Date().getFullYear()
         </ULink>
       </li>
     </ul>
-    <div class="text-neutral-400 dark:text-neutral-500 flex flex-col gap-2">
+    <div class="text-neutral-400 dark:text-neutral-500 flex flex-col gap-1">
       <p>
         <UIcon
           class="size-4"
