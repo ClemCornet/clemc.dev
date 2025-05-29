@@ -19,22 +19,24 @@ const items = ref<NavigationMenuItem[][]>([
       to: '/articles',
     },
   ],
+  [
+    {
+      icon: 'i-iconoir-x',
+      to: 'https://x.com/clemcornet',
+      target: '_blank',
+    },
+    {
+      icon: 'i-iconoir-github',
+      to: 'https://github.com/clemcornet',
+      target: '_blank',
+    },
+    {
+      icon: 'i-iconoir-linkedin',
+      to: 'https://linkedin.com/in/clem-cornet',
+      target: '_blank',
+    },
+  ],
 ])
-
-const socials = [
-  {
-    name: 'X',
-    url: 'https://x.com/clemcornet',
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/clemcornet',
-  },
-  {
-    name: 'Linkedin',
-    url: 'https://linkedin.com/in/clem-cornet',
-  },
-]
 
 const currentYear = computed(() => new Date().getFullYear())
 </script>
@@ -42,12 +44,7 @@ const currentYear = computed(() => new Date().getFullYear())
 <template>
   <UContainer
     as="footer"
-    class="
-    flex
-    justify-between
-    py-4 px-0 lg:px-0
-    border-t border-neutral-600/20 dark:border-neutral-200/30
-    "
+    class="flex justify-between py-4 px-0 lg:px-0 border-t border-neutral-600/20 dark:border-neutral-200/30"
   >
     <div class="flex flex-1 flex-col">
       <UNavigationMenu
@@ -56,35 +53,19 @@ const currentYear = computed(() => new Date().getFullYear())
         :items="items"
         variant="link"
       />
-      <div class="text-neutral-400 dark:text-neutral-500 flex items-center gap-1">
-        <UIcon
-          class="size-4"
-          name="i-iconoir-map-pin"
-        />
-        <p class="text-sm">
+
+      <div class="flex justify-between items-center text-sm text-neutral-400 dark:text-neutral-500 px-2">
+        <p class="flex gap-1 items-center">
+          <UIcon
+            class="mr-0.5 size-4"
+            name="i-iconoir-map-pin"
+          />
           Chillin in Paris
         </p>
+        <p>
+          © {{ currentYear }} Clément Cornet.
+        </p>
       </div>
-    </div>
-    <div class="flex flex-1 flex-col items-end">
-      <nav class="mb-2 w-1/3">
-        <ol class="flex gap-4 justify-end">
-          <ULink
-            v-for="link in socials"
-            :key="link.name"
-            active-class="text-neutral-800 dark:text-neutral-100"
-            external
-            inactive-class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
-            target="_blank"
-            :to="link.url"
-          >
-            {{ link.name }}
-          </ULink>
-        </ol>
-      </nav>
-      <p class="text-sm text-neutral-500">
-        © {{ currentYear }} Clément Cornet.
-      </p>
     </div>
   </UContainer>
 </template>
