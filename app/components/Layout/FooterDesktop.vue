@@ -1,19 +1,25 @@
 <script setup lang="ts">
-const links = [{
-  name: 'index',
-  text: 'Home',
-  hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
-},
-{
-  name: 'articles',
-  text: 'Articles',
-  hoverClass: 'underline-offset-6 hover:underline hover:decoration-wavy',
-},
-{
-  name: 'about',
-  text: 'About',
-  hoverClass: 'underline-offset-6 hover:underline hover:decoration-solid',
-}]
+import type { NavigationMenuItem } from '@nuxt/ui'
+
+const items = ref<NavigationMenuItem[][]>([
+  [
+    {
+      label: 'Home',
+      meta: { icon: 'i-iconoir-home' },
+      to: '/',
+    },
+    {
+      label: 'About',
+      meta: { icon: 'i-iconoir-user' },
+      to: '/about',
+    },
+    {
+      label: 'Blog',
+      meta: { icon: 'i-iconoir-edit' },
+      to: '/articles',
+    },
+  ],
+])
 
 const socials = [
   {
@@ -44,22 +50,12 @@ const currentYear = computed(() => new Date().getFullYear())
     "
   >
     <div class="flex flex-1 flex-col">
-      <nav class="mb-2">
-        <ul class="flex gap-2">
-          <li
-            v-for="link in links"
-            :key="link.name"
-          >
-            <ULink
-              active-class="font-semibold text-neutral-800 dark:text-neutral-100"
-              :class="['mr-4 flex items-center hover:font-medium', link.hoverClass]"
-              :to="{ name: link.name }"
-            >
-              {{ link.text }}
-            </ULink>
-          </li>
-        </ul>
-      </nav>
+      <UNavigationMenu
+        class="w-full"
+        color="neutral"
+        :items="items"
+        variant="link"
+      />
       <div class="text-neutral-400 dark:text-neutral-500 flex items-center gap-1">
         <UIcon
           class="size-4"
@@ -77,6 +73,7 @@ const currentYear = computed(() => new Date().getFullYear())
             v-for="link in socials"
             :key="link.name"
             active-class="text-neutral-800 dark:text-neutral-100"
+            class="text-sm"
             external
             inactive-class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
             target="_blank"

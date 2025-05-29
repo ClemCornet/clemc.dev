@@ -1,23 +1,28 @@
 <script setup lang="ts">
-const links = [
-  {
-    name: 'index',
-    text: 'Home',
-    icon: 'i-iconoir-home',
-    hoverClass: 'hover:decoration-solid',
-  },
-  {
-    name: 'articles',
-    text: 'Articles',
-    icon: 'i-iconoir-edit',
-    hoverClass: 'hover:decoration-wavy',
-  },
-  {
-    name: 'about',
-    text: 'About',
-    icon: 'i-iconoir-user-bag',
-    hoverClass: 'hover:decoration-solid',
-  }]
+import type { NavigationMenuItem } from '@nuxt/ui'
+
+const items = ref<NavigationMenuItem[][]>([
+  [
+    {
+      label: 'Home',
+      meta: { icon: 'i-iconoir-home' },
+      to: '/',
+      slot: 'components' as const,
+    },
+    {
+      label: 'About',
+      meta: { icon: 'i-iconoir-user' },
+      to: '/about',
+      slot: 'components' as const,
+    },
+    {
+      label: 'Blog',
+      meta: { icon: 'i-iconoir-edit' },
+      to: '/articles',
+      slot: 'components' as const,
+    },
+  ],
+])
 
 const lang = ref<'en' | 'fr'>('en')
 const changeLocale = () => {
@@ -40,8 +45,9 @@ defineShortcuts({
     as="header"
     class="
     flex
+    gap-6
+    items-center
     justify-between
-    w-full
     pt-8
     px-8
     pb-4
@@ -55,42 +61,34 @@ defineShortcuts({
     dark:after:bg-neutral-200/20
     "
   >
-    <nuxt-link
-      active-class="text-neutral-800 dark:text-neutral-100"
-      class="text-xl font-extrabold"
+    <ULink
+      class="text-xl font-bold dark:text-neutral-100 text-neutral-700"
       to="/"
     >
       Clem C
-    </nuxt-link>
-    <nav class="flex items-center justify-between">
-      <ul class="flex justify-between gap-2">
-        <li
-          v-for="link in links"
-          :key="link.name"
-        >
-          <ULink
-            active-class="text-neutral-800 dark:text-neutral-100"
-            :class="['font-semibold mr-4 flex items-center underline-offset-2 hover:underline', link.hoverClass]"
-            :to="{ name: link.name }"
-          >
-            <template #default="{ active }">
-              <UIcon
-                v-if="active"
-                class="mr-1 size-4"
-                :name="link.icon"
-              />
-              <span class="mt-0.5">{{ link.text }}</span>
-            </template>
-          </ULink>
-        </li>
-      </ul>
-      <div class="ml-6 flex gap-2">
+    </ULink>
+    <div class="flex items-center gap-6">
+      <UNavigationMenu
+        class="w-full"
+        color="neutral"
+        :items="items"
+      >
+        <template #components-leading="{ active, item }: { active?: boolean; item: NavigationMenuItem }">
+          <UIcon
+            v-if="active"
+            class="size-4"
+            :name="item.meta.icon"
+          />
+        </template>
+      </UNavigationMenu>
+
+      <div class="flex gap-2">
         <ColorModeSwitcher @toggle-theme="toggleTheme" />
         <LangSwitcher
           :lang="lang"
           @change-locale="changeLocale"
         />
       </div>
-    </nav>
+    </div>
   </UContainer>
 </template>

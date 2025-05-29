@@ -37,7 +37,6 @@ useSeoMeta({
     width: 100%;
     z-index: -1;
 }
-
 @media (max-width: 640px) {
   .gradient {
     background: radial-gradient(100% 100% at 100% 100%, var(--color-slate-400) 0, var(--color-slate-950) 100%);

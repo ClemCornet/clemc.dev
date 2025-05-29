@@ -149,4 +149,12 @@ const TIMELINE = [
   width: 100%;
   z-index: -10;
 }
+@media (max-width: 640px) {
+  .gradient {
+    background: radial-gradient(100% 100% at 100% 100%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
+    opacity: .6;
+    height: 100vh;
+    top: 25vh;
+  }
+}
 </style>
