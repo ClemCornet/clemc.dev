@@ -13,6 +13,7 @@ useSeoMeta({
     as="main"
     class="flex flex-col md:flex-row gap-x-16"
   >
+    <div class="gradient" />
     <div class="flex my-8 md:my-0 items-center justify-center">
       <HomeImage />
     </div>
@@ -21,3 +22,18 @@ useSeoMeta({
     </div>
   </UContainer>
 </template>
+
+<style scoped>
+.gradient {
+    background: radial-gradient(50% 50% at 50% 50%, var(--color-slate-400) 0, rgba(0, 220, 130, 0) 100%);
+    border-radius: 50%;
+    filter: blur(150px);
+    height: 30vh;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 25vh;
+    width: 100%;
+}
+</style>
