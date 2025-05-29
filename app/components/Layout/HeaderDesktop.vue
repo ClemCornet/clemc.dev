@@ -48,9 +48,7 @@ defineShortcuts({
     gap-6
     items-center
     justify-between
-    pt-8
-    px-8
-    pb-4
+    py-4
     relative
     after:absolute
     after:w-screen
