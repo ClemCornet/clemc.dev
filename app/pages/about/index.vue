@@ -136,25 +136,27 @@ const TIMELINE = [
 </template>
 
 <style scoped>
-.gradient {
-  background: radial-gradient(40% 80% at 50% 50%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
-  border-radius: 50%;
-  filter: blur(150px);
-  height: 30vh;
-  left: 0;
-  opacity: .2;
-  position: absolute;
-  right: 0;
-  top: 20vh;
-  width: 100%;
-  z-index: -10;
-}
-@media (max-width: 640px) {
+.dark {
   .gradient {
-    background: radial-gradient(100% 100% at 100% 100%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
-    opacity: .6;
-    height: 100vh;
-    top: 25vh;
+    background: radial-gradient(40% 80% at 50% 50%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
+    border-radius: 50%;
+    filter: blur(150px);
+    height: 30vh;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    width: 100%;
+    z-index: -10;
+  }
+  @media (max-width: 640px) {
+    .gradient {
+      background: radial-gradient(100% 100% at 100% 100%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
+      opacity: .6;
+      height: 100vh;
+      top: 25vh;
+    }
   }
 }
 </style>

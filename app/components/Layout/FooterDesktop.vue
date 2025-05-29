@@ -73,7 +73,6 @@ const currentYear = computed(() => new Date().getFullYear())
             v-for="link in socials"
             :key="link.name"
             active-class="text-neutral-800 dark:text-neutral-100"
-            class="text-sm"
             external
             inactive-class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
             target="_blank"

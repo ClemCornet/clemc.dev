@@ -43,7 +43,7 @@ const currentYear = new Date().getFullYear()
         />
         Chillin in Paris
       </p>
-      <p class="text-sm text-neutral-500">
+      <p class="text-sm">
         © {{ currentYear }} Clément Cornet.
       </p>
     </div>
