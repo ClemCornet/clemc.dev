@@ -43,14 +43,6 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode',
   },
 
-  runtimeConfig: {
-    redis: {
-      host: '',
-      port: 0,
-      password: '',
-    },
-  },
-
   routeRules: {
     '/': { prerender: true },
   },
@@ -63,7 +55,7 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
-  compatibilityDate: '2024-10-02',
+  compatibilityDate: '2025-05-29',
 
   vite: {
     plugins: [
