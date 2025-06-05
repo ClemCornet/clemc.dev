@@ -24,7 +24,7 @@
     "better-sqlite3": "^11.10.0",
     "date-fns": "^4.1.0",
     "eslint": "^9.28.0",
-    "nuxt": "^3.17.4",
+    "nuxt": "^3.17.5",
     "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"
   },
@@ -33,7 +33,7 @@
     "lint-staged": "^15.5.2",
     "vue-tsc": "2.2.10"
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.11.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
