@@ -23,7 +23,7 @@
     "@tailwindcss/vite": "^4.1.10",
     "better-sqlite3": "^11.10.0",
     "date-fns": "^4.1.0",
-    "eslint": "^9.28.0",
+    "eslint": "^9.29.0",
     "nuxt": "^3.17.5",
     "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3"
