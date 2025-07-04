@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@iconify-json/iconoir": "^1.2.7",
-    "@nuxt/content": "^3.6.2",
+    "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "^1.5.2",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui": "^3.2.0",
