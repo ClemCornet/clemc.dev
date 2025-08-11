@@ -13,7 +13,7 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "@iconify-json/iconoir": "^1.2.7",
+    "@iconify-json/iconoir": "^1.2.9",
     "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "^1.8.0",
     "@nuxt/image": "^1.11.0",
