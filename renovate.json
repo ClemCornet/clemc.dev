@@ -1,13 +1,11 @@
 {
   "extends": [
-    "config:base",
+    ":semanticCommitTypeAll(chore)",
+    "config:recommended",
     "group:allNonMajor",
-    ":semanticCommitTypeAll(chore)"
+    "schedule:earlyMondays"
   ],
   "rangeStrategy": "bump",
-  "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
-  },
   "packageRules": [
     {
       "dependencyDashboardApproval": true,
@@ -22,7 +20,8 @@
         "pin",
         "digest"
       ],
-      "automerge": true
+      "automerge": true,
+      "automergeStrategy": "squash"
     }
   ]
 }
