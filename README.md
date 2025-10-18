@@ -4,34 +4,19 @@ My personal portfolio and blog website showcasing my work as a frontend develope
 
 ## 🛠️ Tech Stack
 
-- **Framework:** [Nuxt 3](https://nuxt.com/) - Vue.js framework
+- **Framework:** [Nuxt 4](https://nuxt.com/)
 - **Content Management:** [Nuxt Content](https://content.nuxt.com/) for blog posts and markdown handling
 - **Styling:**
   - [Nuxt UI](https://ui.nuxt.com/) for component library
   - [TailwindCSS](https://tailwindcss.com/) for styling
-- **Type Safety:**
-  - TypeScript for type checking
-  - Vue-tsc for Vue component type checking
-- **Quality Assurance:**
-  - ESLint for code linting
-  - Husky for git hooks
-  - Lint-staged for running checks on staged files
+- **Deployment:**
+  - [Netlify](https://www.netlify.com/) Static Hosting
 
-## 🌟 Features
-
-- Responsive design with mobile-first approach
-- SEO optimized with Nuxt's built-in features
-- Blog with markdown support
-- Progressive image loading
-- Dark/Light theme switcher
-- Performance optimized
-- TypeScript support
-
-## 🚀 Getting Started
+## 🚀 Run Locally
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/clemc.dev.git
+   git clone https://github.com/clemcornet/clemc.dev.git
    cd clemc.dev
    ```
 
