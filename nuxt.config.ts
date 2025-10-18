@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
-  compatibilityDate: '2025-05-29',
+  compatibilityDate: '2025-10-18',
 
   vite: {
     plugins: [

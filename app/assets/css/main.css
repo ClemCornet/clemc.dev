@@ -1,8 +1,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+@import "./satoshi.css";
 
 @theme {
-  --font-sans: "Inter", "sans-serif";
+  --font-sans: Satoshi, sans-serif;
+  --font-serif: Instrument, serif;
   --container-8xl: 70rem;
 
   --placeholder-home-img-from: oklch(0.45 0.0475 51.52);
