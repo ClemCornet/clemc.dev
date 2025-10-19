@@ -1,3 +1,4 @@
+import { TZDate } from '@date-fns/tz'
 import { format as formatFns } from 'date-fns'
 
 export const formatDate = (date: Date | string, format = 'do MMM, yyy') => {
@@ -5,4 +6,9 @@ export const formatDate = (date: Date | string, format = 'do MMM, yyy') => {
     date = new Date(date)
   }
   return formatFns(date, format)
+}
+
+export const getCurrentTimeInTimeZone = (timeZone: string, format = 'h:mm a') => {
+  const tzDate = new TZDate(new Date(), timeZone)
+  return formatFns(tzDate, format)
 }

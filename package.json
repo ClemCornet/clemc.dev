@@ -13,6 +13,7 @@
     "prepare": "husky || true"
   },
   "dependencies": {
+    "@date-fns/tz": "^1.4.1",
     "@iconify-json/iconoir": "^1.2.9",
     "@nuxt/content": "^3.7.1",
     "@nuxt/eslint": "^1.9.0",

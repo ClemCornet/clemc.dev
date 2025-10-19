@@ -1,21 +1,17 @@
 <script setup lang="ts">
-// const socials = [
-//   {
-//     name: 'X',
-//     url: 'https://x.com/clemcornet',
-//   },
-//   {
-//     name: 'Github',
-//     url: 'https://github.com/clemcornet',
-//   },
-//   {
-//     name: 'Linkedin',
-//     url: 'https://linkedin.com/in/clem-cornet',
-//   }]
-
-const currentYear = new Date().getFullYear()
+const currentTime = computed(() => getCurrentTimeInTimeZone('Europe/Paris'))
 </script>
 
 <template>
-  <p>Footer - {{ currentYear }}</p>
+  <footer class="flex flex-col gap-4">
+    <USeparator
+      class="h-px"
+      color="neutral"
+    />
+
+    <div class="font-light text-sm flex justify-between">
+      <p>Last updated on Sept 5, 2025</p>
+      <p>Paris, {{ currentTime }}</p>
+    </div>
+  </footer>
 </template>
