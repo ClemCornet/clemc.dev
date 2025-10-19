@@ -5,13 +5,24 @@
 @theme {
   --font-sans: Satoshi, sans-serif;
   --font-serif: Instrument, serif;
-  --container-8xl: 70rem;
 
   --placeholder-home-img-from: oklch(0.45 0.0475 51.52);
   --placeholder-home-img-via: oklch(0.55 0.0116 58.07);
   --placeholder-home-img-to: oklch(0.87 0.0043 56.37);
+
+  --color-primary: oklch(0.6094 0.1156 174.27);
+
+  /* Background color */
+  --color-camel: oklch(0.9955 0.0146 115.03);
+  --color-camel-dark: oklch(20.5% 0 0);
 }
 
+/* Nuxt ui overrides */
 :root {
-  --ui-container: var(--container-8xl);
+  --ui-bg: var(--color-camel);
+  --ui-container: var(--container-2xl);
+}
+
+.dark {
+  --ui-bg: var(--color-camel-dark);
 }

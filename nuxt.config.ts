@@ -47,10 +47,6 @@ export default defineNuxtConfig({
     '/': { prerender: true },
   },
 
-  future: {
-    compatibilityVersion: 4,
-  },
-
   experimental: {
     typedPages: true,
   },

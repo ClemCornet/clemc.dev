@@ -7,7 +7,7 @@ defineEmits<{
 <template>
   <ClientOnly>
     <UTooltip
-      color="gray"
+      color="primary"
       :shortcuts="['t']"
       text="Toggle color mode"
     >
