@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data, pending } = useLazyFetch('/api/commits/last')
+const { data } = useLazyFetch('/api/commits/last')
 const currentTime = computed(() => getCurrentTimeInTimeZone('Europe/Paris'))
 const lastUpdated = computed(() => data.value?.date ? formatDate(data.value?.date, 'MMMM d, yyyy') : '')
 </script>
@@ -11,19 +11,12 @@ const lastUpdated = computed(() => data.value?.date ? formatDate(data.value?.dat
       color="neutral"
     />
 
-    <div class="font-light text-sm flex justify-between">
-      <p>
-        Last updated on
-        <UIcon
-          v-if="pending"
-          name="i-svg-spinners:180-ring-with-bg"
-        />
-        <template v-else-if="lastUpdated">
-          {{ lastUpdated }}
-        </template>
-      </p>
+    <ClientOnly>
+      <div class="font-light text-sm flex justify-between">
+        <p>Last updated on {{ lastUpdated || '...' }}</p>
 
-      <p>Paris, {{ currentTime }}</p>
-    </div>
+        <p>Paris, {{ currentTime }}</p>
+      </div>
+    </ClientOnly>
   </footer>
 </template>
