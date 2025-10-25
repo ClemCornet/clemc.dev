@@ -1,7 +1,6 @@
 [build]
   publish = "dist"
   command = "pnpm generate"
-  ignore = "! git log -1 --pretty=format:'%an' | grep -q 'ClemCornet'"
 
 [build.environment]
   NODE_VERSION = "22.20.0"
