@@ -6,11 +6,11 @@
 
     <div class="flex gap-2">
       <div
-        v-for="(subtitle, index) in ['Frontend Developer', 'UI/UX Enthusiast', 'JavaScript Lover']"
+        v-for="(subtitle, index) in ['Web Developer', 'Frontend Nerd', 'UI/UX Enthusiast']"
         :key="subtitle"
         class="flex gap-2 items-center"
       >
-        <h2 class="text-md font-bold">
+        <h2 class="text-xs md:text-base font-bold">
           {{ subtitle }}
         </h2>
         <div

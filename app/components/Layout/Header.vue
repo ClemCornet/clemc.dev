@@ -46,7 +46,7 @@ defineShortcuts({
 </script>
 
 <template>
-  <header class="mt-24">
+  <header class="mt-0 md:mt-24">
     <UNavigationMenu
       class="w-full"
       color="primary"

@@ -10,7 +10,7 @@ useSeoMeta({
 const TIMELINE = [
   {
     date: 'dec 2024 to present',
-    title: 'Senior Frontend Developer',
+    title: 'Frontend Developer',
     company: 'Patrowl.io',
     urlCompany: 'https://patrowl.io',
     present: true,
@@ -41,37 +41,38 @@ const TIMELINE = [
     as="main"
     class="flex flex-1 flex-col sm:mt-6 mt-12"
   >
-    <div class="gradient" />
     <div class="flex flex-col gap-8 mx-auto w-full max-w-xl px-0">
       <section class="flex flex-col gap-4">
         <div class="flex items-center gap-4">
-          <UAvatar
-            size="xl"
-            src="https://github.com/clemcrntptwl.png"
-          />
-          <h1 class="text-2xl font-semibold">
+          <img
+            alt="Clement Cornet Avatar"
+            class="w-14"
+            src="/avatar.png"
+          >
+          <h1 class="text-4xl text-primary font-serif mb-1">
             About me
           </h1>
         </div>
         <p>With a strong foundation in front-end development, I bring a technical expertise to building scalable and maintainable interfaces.</p>
 
         <p>
-          I'm always curious about what's new in the front-end world, especially when it comes to <ULink
-            class="p-0"
-            external
+          I'm always curious about what's new in the front-end world, especially when it comes to
+          <UButton
+            color="primary"
             target="_blank"
             to="https://vuejs.org"
+            variant="link"
           >
             Vue.js
-          </ULink> and
-          <ULink
-            class="p-0"
-            external
+          </UButton> and
+          <UButton
+            color="primary"
             target="_blank"
             to="https://nuxt.com"
+            variant="link"
           >
             Nuxt
-          </ULink>.
+          </UButton>.
         </p>
 
         <p>I enjoy exploring modern tools and techniques that help me build fast, clean, and future-proof web applications.</p>
@@ -83,14 +84,14 @@ const TIMELINE = [
         </h2>
         <p>
           As a front-end developer at
-          <ULink
-            class="p-0"
-            external
+          <UButton
+            color="primary"
             target="_blank"
             to="https://patrowl.io"
+            variant="link"
           >
             Patrowl.io
-          </ULink>, I contribute to building a cybersecurity SaaS platform that helps organizations identify, monitor, and remediate web-exposed vulnerabilities through a streamlined and intuitive user interface.
+          </UButton>, I contribute to building a cybersecurity SaaS platform that helps organizations identify, monitor, and remediate web-exposed vulnerabilities through a streamlined and intuitive user interface.
         </p>
       </section>
 
@@ -98,21 +99,21 @@ const TIMELINE = [
         <h2 class="mb-8 text-2xl font-semibold">
           Experience
         </h2>
-        <ol class="list-none border-s border-neutral-200 dark:border-neutral-600">
+        <ol class="list-none border-s border-neutral-200">
           <li
             v-for="(item, index) in TIMELINE"
             :key="index"
             :class="[
-              'relative flex flex-col gap-y-1.5 relative !mb-10 ms-4 p-2 rounded-lg border-[0.5px]',
-              { 'bg-neutral-100 dark:bg-neutral-800 border-neutral-600 dark:border-neutral-200': item.present },
-              { 'bg-neutral-100 dark:bg-neutral-900 border-neutral-400 dark:border-neutral-400': !item.present },
+              'relative flex flex-col gap-y-1.5 !mb-10 ms-4 p-2 rounded-lg border-[0.5px]',
+              { 'bg-primary-50 border-primary-500': item.present },
+              { 'bg-neutral-50 border-neutral-400': !item.present },
             ]"
           >
             <div
               :class="[
-                'absolute -left-[23px] top-1/2 -translate-y-1/2 size-3 rounded-full ring-4 ring-white dark:ring-neutral-900',
-                { 'bg-neutral-500 dark:bg-neutral-300': item.present },
-                { 'bg-neutral-300 dark:bg-neutral-500': !item.present },
+                'absolute -left-[23px] top-1/2 -translate-y-1/2 size-3 rounded-full ring-4 ring-white',
+                { 'bg-primary-500': item.present },
+                { 'bg-neutral-300': !item.present },
               ]"
             />
             <p class="text-sm">
@@ -121,42 +122,22 @@ const TIMELINE = [
             <p class="font-semibold">
               {{ item.title }}
             </p>
-            <ULink
-              external
+            <UButton
+              class="group"
+              color="primary"
               target="_blank"
               :to="item.urlCompany"
+              variant="link"
             >
               {{ item.company }}
-            </ULink>
+              <UIcon
+                class="opacity-0 group-hover:opacity-100 transition-opacity -ml-1"
+                name="i-iconoir-arrow-up-right"
+              />
+            </UButton>
           </li>
         </ol>
       </section>
     </div>
   </UContainer>
 </template>
-
-<style scoped>
-.dark {
-  .gradient {
-    background: radial-gradient(40% 80% at 50% 50%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
-    border-radius: 50%;
-    filter: blur(150px);
-    height: 30vh;
-    left: 0;
-    opacity: .2;
-    position: absolute;
-    right: 0;
-    top: 20vh;
-    width: 100%;
-    z-index: -10;
-  }
-  @media (max-width: 640px) {
-    .gradient {
-      background: radial-gradient(100% 100% at 100% 100%, var(--color-slate-400) 0, var(--color-slate-950) 100%);
-      opacity: .6;
-      height: 100vh;
-      top: 25vh;
-    }
-  }
-}
-</style>
