@@ -24,6 +24,11 @@ const items = [
   ],
 ] satisfies NavigationMenuItem[][]
 
+const route = useRoute()
+const isActive = (to: string) => {
+  return route.path === to
+}
+
 const lang = ref<'en' | 'fr'>('en')
 const changeLocale = () => {
   lang.value = 'en'
@@ -50,9 +55,8 @@ defineShortcuts({
     >
       <template #components="{ item }">
         <UButton
-          active-color="primary"
+          :active="isActive(item.to)"
           color="primary"
-          :to="item.to"
           variant="link"
         >
           {{ item.label }}
