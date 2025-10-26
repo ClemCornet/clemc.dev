@@ -10,6 +10,18 @@
   --placeholder-home-img-via: oklch(0.55 0.0116 58.07);
   --placeholder-home-img-to: oklch(0.87 0.0043 56.37);
 
+  --color-primary-50: oklch(0.97 0.02 174.27);
+  --color-primary-100: oklch(0.94 0.04 174.27);
+  --color-primary-200: oklch(0.88 0.06 174.27);
+  --color-primary-300: oklch(0.80 0.08 174.27);
+  --color-primary-400: oklch(0.70 0.10 174.27);
+  --color-primary-500: oklch(0.6094 0.1156 174.27);
+  --color-primary-600: oklch(0.52 0.12 174.27);
+  --color-primary-700: oklch(0.43 0.10 174.27);
+  --color-primary-800: oklch(0.34 0.08 174.27);
+  --color-primary-900: oklch(0.26 0.06 174.27);
+  --color-primary-950: oklch(0.18 0.03 174.27);
+
   --color-primary: oklch(0.6094 0.1156 174.27);
 
   /* Background color */

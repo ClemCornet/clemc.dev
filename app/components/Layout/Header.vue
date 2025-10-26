@@ -7,6 +7,7 @@ const items = [
       label: 'Home',
       to: '/',
       class: 'px-0',
+      slot: 'components' as const,
     },
   ],
   [
@@ -49,7 +50,9 @@ defineShortcuts({
     >
       <template #components="{ item }">
         <UButton
+          active-color="primary"
           color="primary"
+          :to="item.to"
           variant="link"
         >
           {{ item.label }}
