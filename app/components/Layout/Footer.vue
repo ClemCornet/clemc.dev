@@ -11,12 +11,12 @@ const lastUpdated = computed(() => data.value?.date ? formatDate(data.value?.dat
       color="neutral"
     />
 
-    <ClientOnly>
-      <div class="font-light text-sm flex justify-between">
-        <p>Last updated on {{ lastUpdated || '...' }}</p>
+    <div class="font-light text-sm flex justify-between">
+      <p>Last updated on {{ lastUpdated || '...' }}</p>
 
+      <ClientOnly>
         <p>Paris, {{ currentTime }}</p>
-      </div>
-    </ClientOnly>
+      </ClientOnly>
+    </div>
   </footer>
 </template>
