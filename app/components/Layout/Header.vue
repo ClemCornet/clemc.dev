@@ -54,7 +54,26 @@ defineShortcuts({
       variant="link"
     >
       <template #components="{ item }">
+        <div v-if="item.to === '/'">
+          <div
+            v-if="isActive(item.to)"
+            class="size-4 bg-primary rounded-full transition-all duration-300 ease-linear shadow-[inset_2px_2px_6px_rgba(255,255,255,0.8),inset_-2px_-2px_4px_rgba(0,0,0,0.2)] hover:rotate-180"
+          />
+
+          <UButton
+            v-else
+            :active="isActive(item.to)"
+            color="primary"
+            le
+            leading-icon="i-iconoir-arrow-left"
+            variant="link"
+          >
+            {{ item.label }}
+          </UButton>
+        </div>
+
         <UButton
+          v-else
           :active="isActive(item.to)"
           color="primary"
           variant="link"

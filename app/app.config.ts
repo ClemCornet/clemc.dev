@@ -5,6 +5,11 @@ export default defineAppConfig({
     },
     button: {
       variants: {
+        size: {
+          md: {
+            leadingIcon: 'size-4',
+          },
+        },
         active: {
           true: {
             base: 'font-bold',
