@@ -8,3 +8,7 @@ node_modules
 .env
 dist
 todo.md
+
+
+CLAUDE.md
+**/CLAUDE.md
