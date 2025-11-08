@@ -1,10 +1,8 @@
 <script setup lang="ts">
-const description = `I'm Clément, a frontend developer based in Paris, mainly focused on JavaScript, TypeScript, Vue.js, and Nuxt.js.`
-
 useSeoMeta({
   title: 'About',
   ogTitle: 'Clement Cornet - Frontend Developer',
-  description,
+  description: 'I\'m Clément, a frontend developer based in Paris, mainly focused on JavaScript, TypeScript, Vue.js, and Nuxt.js.',
 })
 
 const TIMELINE = [
@@ -40,11 +38,13 @@ const TIMELINE = [
   <main class="flex flex-col gap-8 my-8">
     <section class="flex flex-col gap-4">
       <div class="flex items-center gap-4">
-        <img
+        <NuxtImg
           alt="Clement Cornet Avatar"
-          class="w-14"
-          src="/avatar.png"
-        >
+          class="rounded-full"
+          height="60"
+          src="https://github.com/clemcornet.png"
+          width="60"
+        />
         <h1 class="text-4xl text-primary font-serif mb-1">
           About me
         </h1>
