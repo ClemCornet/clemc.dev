@@ -11,5 +11,6 @@ useSeoMeta({
 <template>
   <main>
     <HomeHeader />
+    <HomeBlogFeatured />
   </main>
 </template>

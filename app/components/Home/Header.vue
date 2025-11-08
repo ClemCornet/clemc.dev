@@ -5,7 +5,5 @@
       <HomeHeaderDescription />
       <SocialNetworks />
     </div>
-
-    <HomeBlogFeatured />
   </div>
 </template>

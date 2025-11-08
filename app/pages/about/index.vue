@@ -75,7 +75,7 @@ const TIMELINE = [
     </section>
 
     <section class="flex flex-col gap-4">
-      <h2 class="mb-2 text-2xl font-semibold">
+      <h2 class="text-2xl font-semibold">
         Current role
       </h2>
       <p>
@@ -91,8 +91,8 @@ const TIMELINE = [
       </p>
     </section>
 
-    <section>
-      <h2 class="mb-8 text-2xl font-semibold">
+    <section class="flex flex-col gap-4">
+      <h2 class="text-2xl font-semibold">
         Experience
       </h2>
       <ol class="list-none border-s border-neutral-200">

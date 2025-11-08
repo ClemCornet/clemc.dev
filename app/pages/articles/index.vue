@@ -8,20 +8,15 @@ useSeoMeta({
 </script>
 
 <template>
-  <UContainer
-    as="main"
-    class="flex flex-1 flex-col mt-12"
-  >
-    <div class="mx-auto w-full max-w-xl px-0">
-      <h1 class="mb-2 text-2xl font-semibold">
-        Today I learned
+  <main class="flex flex-col gap-8 my-8">
+    <div class="flex flex-col gap-2">
+      <h1 class="text-4xl text-primary font-serif">
+        Today I learned.
       </h1>
-      <p class="ml-1 text-sm text-neutral-500 dark:text-neutral-400">
+      <p class="text-light text-sm">
         Discover daily insights and lessons from my journey as a frontend developer, covering JavaScript, TypeScript, Vue.js, Nuxt.js, and more. 🎢
       </p>
-      <ul class="mt-12">
-        <li>Incoming ...</li>
-      </ul>
     </div>
-  </UContainer>
+    <HomeBlogFeatured />
+  </main>
 </template>
