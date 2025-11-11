@@ -45,7 +45,7 @@ const TIMELINE = [
           src="https://github.com/clemcornet.png"
           width="60"
         />
-        <h1 class="text-4xl text-primary font-serif mb-1">
+        <h1 class="text-4xl text-primary font-serif mb-1 tracking-tight">
           About me
         </h1>
       </div>

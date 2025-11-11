@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-4xl text-primary font-serif mb-1">
+    <h1 class="text-4xl text-primary font-serif mb-1 tracking-tight">
       Clement Cornet
     </h1>
 

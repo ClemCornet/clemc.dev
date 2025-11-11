@@ -10,7 +10,7 @@ useSeoMeta({
 <template>
   <main class="flex flex-col gap-8 my-8">
     <div class="flex flex-col gap-2">
-      <h1 class="text-4xl text-primary font-serif">
+      <h1 class="text-4xl text-primary font-serif tracking-tight">
         Today I learned.
       </h1>
       <p class="text-light text-sm">
