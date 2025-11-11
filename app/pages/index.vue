@@ -9,7 +9,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <main>
+  <main class="flex flex-col gap-8 my-8">
     <HomeHeader />
     <HomeBlogFeatured />
   </main>
