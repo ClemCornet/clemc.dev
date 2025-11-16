@@ -36,7 +36,7 @@ const TIMELINE = [
 
 <template>
   <main class="flex flex-col gap-8 my-8">
-    <section class="flex flex-col gap-4">
+    <!-- <section class="flex flex-col gap-4">
       <div class="flex items-center gap-4">
         <NuxtImg
           alt="Clement Cornet Avatar"
@@ -72,13 +72,29 @@ const TIMELINE = [
       </p>
 
       <p>I enjoy exploring modern tools and techniques that help me build fast, clean, and future-proof web applications.</p>
+    </section> -->
+
+    <section>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
+          <h1 class="text-4xl text-primary font-serif mb-1 tracking-tight">
+            Let's talk
+          </h1>
+
+          <p class="text-light text-sm">
+            Discover daily insights and lessons from my journey as a frontend developer, covering JavaScript, TypeScript, Vue.js, Nuxt.js, and more. 🎢
+          </p>
+        </div>
+
+        <AboutChatMessages />
+      </div>
     </section>
 
-    <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-semibold">
+    <section class="flex flex-col gap-2">
+      <h2 class="text-md font-semibold">
         Current role
       </h2>
-      <p>
+      <p class="text-sm">
         As a front-end developer at
         <UButton
           color="primary"
@@ -91,8 +107,8 @@ const TIMELINE = [
       </p>
     </section>
 
-    <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-semibold">
+    <section class="flex flex-col gap-2">
+      <h2 class="text-md font-semibold">
         Experience
       </h2>
       <ol class="list-none border-s border-neutral-200">

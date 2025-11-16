@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/device',
   ],
-
   devtools: {
     enabled: true,
     timeline: {
@@ -35,8 +34,13 @@ export default defineNuxtConfig({
     colorMode: false,
   },
 
+  runtimeConfig: {
+    openaiApiKey: '',
+  },
+
   routeRules: {
     '/': { prerender: true },
+    '/api/chat': { cors: true, headers: { 'cache-control': 'no-cache' } },
   },
 
   experimental: {
@@ -44,6 +48,10 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-10-18',
+
+  nitro: {
+    preset: 'netlify',
+  },
 
   vite: {
     plugins: [
