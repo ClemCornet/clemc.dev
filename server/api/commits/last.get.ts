@@ -30,11 +30,11 @@ const fetchGithubLastCommit = defineCachedFunction(async () => {
     const lastCommit = res[0]
 
     return {
-      sha: lastCommit.sha,
-      message: lastCommit.commit.message,
-      author: lastCommit.commit.author.name,
-      date: lastCommit.commit.author.date,
-      url: lastCommit.html_url,
+      sha: lastCommit?.sha,
+      message: lastCommit?.commit.message,
+      author: lastCommit?.commit.author.name,
+      date: lastCommit?.commit.author.date,
+      url: lastCommit?.html_url,
     }
   }
   catch {
