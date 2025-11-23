@@ -32,6 +32,7 @@ export default defineNuxtConfig({
 
   ui: {
     colorMode: false,
+    mdc: true,
   },
 
   runtimeConfig: {
@@ -39,8 +40,15 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    // Pages statiques pré-rendues
     '/': { prerender: true },
+    '/about/**': { prerender: true },
+    '/blog/**': { prerender: true },
+    '/projects/**': { prerender: true },
+
+    // API routes en mode serveur (fonctions serverless)
     '/api/chat': { cors: true, headers: { 'cache-control': 'no-cache' } },
+    '/api/cv/**': { prerender: false },
   },
 
   experimental: {

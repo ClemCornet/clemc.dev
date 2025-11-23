@@ -44,32 +44,34 @@ function onSubmit(e: Event) {
 <template>
   <div class="flex flex-col gap-4">
     <UChatMessages
+      :assistant="{
+        variant: 'soft',
+        side: 'left',
+        ui: {
+          content: 'bg-primary-100 text-primary-700',
+        },
+      }"
+      :messages="chat.messages"
       should-auto-scroll
       :status="chat.status"
       :ui="{
-        root: 'ring ring-default rounded-lg p-4 max-h-[1500px] md:max-h-[600px] overflow-y-auto',
+        root: 'ring ring-default rounded-lg p-4 h-[400px] max-h-[400px] overflow-y-auto flex-none',
+      }"
+      :user="{
+        variant: 'soft',
+        side: 'right',
+        ui: {
+          content: 'bg-blue-100 text-blue-700',
+        },
       }"
     >
-      <UChatMessage
-        v-for="(message, index) in chat.messages"
-        :key="index"
-        v-bind="message"
-        color="primary"
-        :side="message.role === 'user' ? 'right' : 'left'"
-        :ui="{
-          container: message.role === 'user' ? 'max-w-[80%] ml-auto' : 'max-w-[80%]',
-          content: `text-sm ${message.role === 'user' ? 'bg-blue-100 text-blue-600' : 'bg-primary-100 text-primary-600'}`,
-        }"
-        variant="soft"
-      >
-        <template #content>
-          <MDC
-            :cache-key="message.id"
-            class="*:first:mt-0 *:last:mb-0"
-            :value="getTextFromMessage(message)"
-          />
-        </template>
-      </UChatMessage>
+      <template #content="{ message }">
+        <MDC
+          :cache-key="message.id"
+          class="*:first:mt-0 *:last:mb-0"
+          :value="getTextFromMessage(message)"
+        />
+      </template>
     </UChatMessages>
 
     <div class="flex justify-between gap-2">
@@ -94,8 +96,8 @@ function onSubmit(e: Event) {
     >
       <UChatPromptSubmit
         :status="chat.status"
-        @reload="chat.regenerate"
-        @stop="chat.stop"
+        @reload="chat.regenerate()"
+        @stop="chat.stop()"
       />
     </UChatPrompt>
   </div>

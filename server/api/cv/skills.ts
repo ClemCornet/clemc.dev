@@ -2,18 +2,18 @@ export default defineEventHandler(() => {
   return [
     {
       category: 'Frontend',
-      skills: ['Vue.js', 'Nuxt', 'React', 'TypeScript', 'Tailwind CSS'],
+      skills: ['Vue.js', 'Nuxt', 'React', 'React native', 'TypeScript', 'Tailwindcss'],
     },
     {
       category: 'Backend',
-      skills: ['Node.js', 'Python', 'PostgreSQL'],
+      skills: ['Node.js', 'Nest', 'PostgreSQL', 'Prisma ORM'],
     },
     {
       category: 'DevOps',
-      skills: ['Docker', 'CI/CD', 'AWS'],
+      skills: ['Docker', 'Github Actions', 'Netlify', 'Heroku'],
     },
     {
-      category: 'Autres',
+      category: 'Miscellaneous',
       skills: ['Git', 'Agile'],
     },
   ]

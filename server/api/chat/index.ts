@@ -16,37 +16,38 @@ export default defineLazyEventHandler(async () => {
 
     const result = streamText({
       model: openai('gpt-4o'),
-      system: `Tu es un assistant qui présente le CV de Clément Cornet.
+      system: `You are an assistant presenting Clément Cornet's resume.
 
-RÈGLES STRICTES :
-- Tu DOIS TOUJOURS utiliser les tools disponibles pour répondre aux questions
-- Ne réponds JAMAIS directement sans utiliser un tool
-- Si une information n'est pas disponible via les tools, dis-le clairement
-- Reste professionnel, concis et factuel
-- Présente les informations de manière structurée et agréable à lire
-- Utilise le markdown pour formater tes réponses (listes, gras, etc.)
+STRICT RULES:
+- You MUST ALWAYS use the available tools to answer questions
+- NEVER respond directly without using a tool
+- If information is not available via the tools, state it clearly
+- Stay professional, concise and factual
+- Present information in a structured and pleasant way
+- You must speak in first person singular (I/me)
+- Use markdown to format your answers (lists, bold, etc.)
 
-TOOLS DISPONIBLES :
-- getAbout: Présentation générale et informations de contact
-- getExperiences: Liste complète des expériences professionnelles
-- getExperienceDetails: Détails d'une expérience spécifique (par nom d'entreprise)
-- getSkills: Compétences techniques par catégorie
-- getProjects: Projets personnels ou professionnels
-- getEducation: Parcours académique
+AVAILABLE TOOLS:
+- getAbout: General presentation and contact information
+- getExperiences: Complete list of professional experiences
+- getExperienceDetails: Details of a specific experience (by company name)
+- getSkills: Technical skills by category
+- getProjects: Personal or professional projects
+- getEducation: Academic background
 
-Quand l'utilisateur pose une question, choisis le ou les tools appropriés pour y répondre.`,
+When the user asks a question, choose the appropriate tool(s) to answer it.`,
       messages: convertToModelMessages(messages),
       stopWhen: stepCountIs(5),
       tools: {
         getAbout: tool({
-          description: 'Obtenir les informations générales : nom, titre, bio, localisation et contacts',
+          description: 'Get general information: name, title, bio, location and contacts',
           inputSchema: z.object({}),
           execute: async () => {
             return await $fetch('/api/cv/about')
           },
         }),
         getExperiences: tool({
-          description: 'Obtenir la liste complète des expériences professionnelles avec un résumé de chacune',
+          description: 'Get the complete list of professional experiences with a summary of each',
           inputSchema: z.object({}),
           execute: async () => {
             const experiences = await $fetch<Array<{
@@ -68,9 +69,9 @@ Quand l'utilisateur pose une question, choisis le ou les tools appropriés pour 
           },
         }),
         getExperienceDetails: tool({
-          description: 'Obtenir les détails complets d\'une expérience professionnelle spécifique (description, achievements, technologies)',
+          description: 'Get complete details of a specific professional experience (description, achievements, technologies)',
           inputSchema: z.object({
-            company: z.string().describe('Le nom de l\'entreprise (ex: "Patrowl.io", "Le Collectionist", "Meero")'),
+            company: z.string().describe('The company name (e.g., "Patrowl.io", "Le Collectionist", "Meero")'),
           }),
           execute: async ({ company }) => {
             const experiences = await $fetch<Array<{
@@ -87,15 +88,15 @@ Quand l'utilisateur pose une question, choisis le ou les tools appropriés pour 
               exp => exp.company.toLowerCase() === company.toLowerCase(),
             )
             if (!experience) {
-              return { error: `Aucune expérience trouvée pour l'entreprise "${company}"` }
+              return { error: `No experience found for company "${company}"` }
             }
             return experience
           },
         }),
         getSkills: tool({
-          description: 'Obtenir les compétences techniques, optionnellement filtrées par catégorie',
+          description: 'Get technical skills, optionally filtered by category',
           inputSchema: z.object({
-            category: z.string().optional().describe('Catégorie de compétences (ex: "Frontend", "Backend", "DevOps")'),
+            category: z.string().optional().describe('Skills category (e.g., "Frontend", "Backend", "DevOps")'),
           }),
           execute: async ({ category }) => {
             const skills = await $fetch<Array<{
@@ -106,20 +107,20 @@ Quand l'utilisateur pose une question, choisis le ou les tools appropriés pour 
               const skillCategory = skills.find(
                 s => s.category.toLowerCase() === category.toLowerCase(),
               )
-              return skillCategory || { error: `Aucune catégorie "${category}" trouvée` }
+              return skillCategory || { error: `No category "${category}" found` }
             }
             return skills
           },
         }),
         getProjects: tool({
-          description: 'Obtenir la liste des projets personnels ou professionnels',
+          description: 'Get the list of personal or professional projects',
           inputSchema: z.object({}),
           execute: async () => {
             return await $fetch('/api/cv/projects')
           },
         }),
         getEducation: tool({
-          description: 'Obtenir le parcours académique et les formations',
+          description: 'Get academic background and education',
           inputSchema: z.object({}),
           execute: async () => {
             return await $fetch('/api/cv/education')
