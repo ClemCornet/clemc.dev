@@ -39,13 +39,13 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    // Pages statiques pré-rendues
+    // Static pages
     '/': { prerender: true },
     '/about/**': { prerender: true },
     '/blog/**': { prerender: true },
     '/projects/**': { prerender: true },
 
-    // API routes en mode serveur (fonctions serverless)
+    // Serverless functions
     '/api/chat': { cors: true, headers: { 'cache-control': 'no-cache' } },
     '/api/cv/**': { prerender: false },
   },
