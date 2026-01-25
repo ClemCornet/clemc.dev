@@ -25,9 +25,16 @@ useSeoMeta({
             </h1>
           </div>
 
-          <p class="text-light text-sm">
-            Discover daily insights and lessons from my journey as a frontend developer, covering JavaScript, TypeScript, Vue.js, Nuxt.js, and more. 🎢
-          </p>
+          <div class="flex gap-1">
+            <p class="text-light text-sm">
+              Chat with my AI and find out more about me!
+            </p>
+            <UIcon
+              class="text-light"
+              name="i-iconoir-sparks"
+              :size="16"
+            />
+          </div>
         </div>
 
         <AboutChatMessages />

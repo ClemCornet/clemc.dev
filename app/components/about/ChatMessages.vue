@@ -72,6 +72,16 @@ function onSubmit(e: Event) {
           :value="getTextFromMessage(message)"
         />
       </template>
+      <template #indicator>
+        <UButton
+          class="px-0"
+          color="neutral"
+          label="Consulting the crystal ball 🔮"
+          loading
+          loading-icon="i-lucide-loader"
+          variant="link"
+        />
+      </template>
     </UChatMessages>
 
     <div class="flex justify-between gap-2">
@@ -81,7 +91,7 @@ function onSubmit(e: Event) {
         class="flex-1 flex"
       >
         <div
-          :class="['text-center min-w-0 px-4 py-2 rounded-lg text-xs w-full flex items-center justify-center transition duration-300 ease-in-out md:hover:scale-95 select-none', message.color]"
+          :class="['text-center min-w-0 px-4 py-2 rounded-lg text-xs w-full flex items-center justify-center transition duration-300 ease-in-out md:hover:scale-95 select-none cursor-pointer', message.color]"
           @click="input = message.text"
         >
           {{ message.text }}
