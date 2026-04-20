@@ -23,20 +23,20 @@
     "@nuxt/ui": "^4.6.1",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.3",
     "ai": "^5.0.179",
     "better-sqlite3": "^12.9.0",
     "date-fns": "^4.1.0",
     "eslint": "^9.39.4",
     "nuxt": "^4.4.2",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.3",
     "typescript": "^5.9.3",
     "zod": "^4.3.6"
   },
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "vue-tsc": "^3.2.6"
+    "vue-tsc": "^3.2.7"
   },
   "packageManager": "pnpm@10.33.0",
   "pnpm": {
