@@ -13,32 +13,32 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^2.0.106",
-    "@ai-sdk/vue": "^2.0.196",
+    "@ai-sdk/openai": "^2.0.107",
+    "@ai-sdk/vue": "^2.0.202",
     "@date-fns/tz": "^1.5.0",
     "@iconify-json/iconoir": "^1.2.11",
     "@nuxt/content": "^3.14.0",
-    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/eslint": "^1.16.0",
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^4.8.2",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
-    "@tailwindcss/vite": "^4.3.0",
-    "ai": "^5.0.196",
-    "better-sqlite3": "^12.10.0",
+    "@tailwindcss/vite": "^4.3.1",
+    "ai": "^5.0.202",
+    "better-sqlite3": "^12.10.1",
     "date-fns": "^4.4.0",
     "eslint": "^9.39.4",
-    "nuxt": "^4.4.7",
-    "tailwindcss": "^4.3.0",
+    "nuxt": "^4.4.8",
+    "tailwindcss": "^4.3.1",
     "typescript": "^5.9.3",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "vue-tsc": "^3.3.3"
+    "vue-tsc": "^3.3.5"
   },
-  "packageManager": "pnpm@10.34.1",
+  "packageManager": "pnpm@10.34.3",
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
