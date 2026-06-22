@@ -13,19 +13,19 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^2.0.107",
-    "@ai-sdk/vue": "^2.0.202",
+    "@ai-sdk/openai": "^2.0.108",
+    "@ai-sdk/vue": "^2.0.204",
     "@date-fns/tz": "^1.5.0",
     "@iconify-json/iconoir": "^1.2.11",
     "@nuxt/content": "^3.14.0",
     "@nuxt/eslint": "^1.16.0",
     "@nuxt/image": "^1.11.0",
-    "@nuxt/ui": "^4.8.2",
+    "@nuxt/ui": "^4.9.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
     "@tailwindcss/vite": "^4.3.1",
-    "ai": "^5.0.202",
-    "better-sqlite3": "^12.10.1",
+    "ai": "^5.0.204",
+    "better-sqlite3": "^12.11.1",
     "date-fns": "^4.4.0",
     "eslint": "^9.39.4",
     "nuxt": "^4.4.8",
@@ -38,7 +38,7 @@
     "lint-staged": "^16.4.0",
     "vue-tsc": "^3.3.5"
   },
-  "packageManager": "pnpm@10.34.3",
+  "packageManager": "pnpm@10.34.4",
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
