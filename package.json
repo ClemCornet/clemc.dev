@@ -27,7 +27,7 @@
     "ai": "^5.0.210",
     "better-sqlite3": "^12.11.1",
     "date-fns": "^4.4.0",
-    "eslint": "^9.39.4",
+    "eslint": "^9.39.5",
     "nuxt": "^4.4.8",
     "tailwindcss": "^4.3.2",
     "typescript": "^5.9.3",
@@ -36,9 +36,9 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "vue-tsc": "^3.3.6"
+    "vue-tsc": "^3.3.7"
   },
-  "packageManager": "pnpm@10.34.4",
+  "packageManager": "pnpm@10.34.5",
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
