@@ -13,8 +13,8 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^2.0.115",
-    "@ai-sdk/vue": "^2.0.220",
+    "@ai-sdk/openai": "^2.0.117",
+    "@ai-sdk/vue": "^2.0.225",
     "@date-fns/tz": "^1.5.0",
     "@iconify-json/iconoir": "^1.2.11",
     "@nuxt/content": "^3.15.2",
@@ -24,11 +24,11 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
     "@tailwindcss/vite": "^4.3.3",
-    "ai": "^5.0.220",
+    "ai": "^5.0.225",
     "better-sqlite3": "^12.11.1",
     "date-fns": "^4.4.0",
     "eslint": "^9.39.5",
-    "nuxt": "^4.5.0",
+    "nuxt": "^4.5.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
     "zod": "^4.4.3"
@@ -36,7 +36,7 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "vue-tsc": "^3.3.8"
+    "vue-tsc": "^3.3.9"
   },
   "packageManager": "pnpm@10.34.5",
   "pnpm": {
