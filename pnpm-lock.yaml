@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@ai-sdk/openai':
-        specifier: ^2.0.122
-        version: 2.0.122(zod@4.5.4)
+        specifier: ^2.0.125
+        version: 2.0.125(zod@4.5.4)
       '@ai-sdk/vue':
-        specifier: ^2.0.249
-        version: 2.0.249(vue@3.5.40(typescript@5.9.3))(zod@4.5.4)
+        specifier: ^2.0.253
+        version: 2.0.253(vue@3.5.40(typescript@5.9.3))(zod@4.5.4)
       '@date-fns/tz':
         specifier: ^1.5.0
         version: 1.5.0
@@ -31,7 +31,7 @@ importers:
         version: 1.11.0(db0@0.3.4(better-sqlite3@12.11.1))(ioredis@5.10.1)(magicast@0.5.2)
       '@nuxt/ui':
         specifier: ^4.11.0
-        version: 4.11.0(1b4eac8aa073732cc907371642d83c4d)
+        version: 4.11.0(4357dd875db1b9a123c000b7c7f83739)
       '@nuxtjs/color-mode':
         specifier: ^3.5.2
         version: 3.5.2(magicast@0.5.2)
@@ -42,8 +42,8 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.1(esbuild@0.28.0)(jiti@2.7.0)(terser@5.46.0)(yaml@2.9.0))
       ai:
-        specifier: ^5.0.249
-        version: 5.0.249(zod@4.5.4)
+        specifier: ^5.0.253
+        version: 5.0.253(zod@4.5.4)
       better-sqlite3:
         specifier: ^12.11.1
         version: 12.11.1
@@ -78,20 +78,20 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@2.0.143':
-    resolution: {integrity: sha512-ULaaBnXviDDKdpQdPyiiRv8fOxoNiSLoCLpVi35CiWlPgbkgJN8ME0PG5D08KO+Ad0X4x2wTrw0CxQLtnfC5Vw==}
+  '@ai-sdk/gateway@2.0.147':
+    resolution: {integrity: sha512-uBi+N+9ApEKPrasD+QeUhGoDaXGZF4VuEfBrd1eh/taKQeThK02RzbPsLP9UmJNZJnqjr+7VPcZ5+Cj65QfGiw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/openai@2.0.122':
-    resolution: {integrity: sha512-/s0KGIbpQvjWgMQaUqmQOt0sdgnE8vFdnxz4tI5r/ICUvvCyCmT5CWrmwIVPEYvKSMMsAyDutal4SW3LarAZsQ==}
+  '@ai-sdk/openai@2.0.125':
+    resolution: {integrity: sha512-9VWeQuY8eJwKlTQO8qbYGb18nPREb80DcWZVlhP6534tc1vEalRDCDXfv5zg3ied5wrAksLpvWQPa2379w4kmQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/provider-utils@3.0.35':
-    resolution: {integrity: sha512-/5z8tRGuYXwFy0ID+WtiWiECJzH5x/rI/g/3H8x3GQvE4i4etnZfKWAiU23VZEymInh+4l7uMNQJyaNN/54QFw==}
+  '@ai-sdk/provider-utils@3.0.36':
+    resolution: {integrity: sha512-2eSw90hn32Je6n2a8Gf4dJ2EoecPJuOCWqwZCw+BkhPq2LOS01HX3s6ljgOm0iIkZiD5aAuMdpOw17rYKQF/Zg==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -100,8 +100,8 @@ packages:
     resolution: {integrity: sha512-h88OPkavHTiN9tMn2l5awAznGB0lXzjcLhgR1/rvjB2zlLprsNxbM2tt6OJsHUxduLC3klq0/eqaSf6fX5XVww==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/vue@2.0.249':
-    resolution: {integrity: sha512-k3l7+iM+SpCLIMynpoCrS4QKKL67cVX+C3ungHUkNVBMJ7Vxxlt6RE1biXarBAjOYxEp8XxtjK4wy8N3W6cR0A==}
+  '@ai-sdk/vue@2.0.253':
+    resolution: {integrity: sha512-uD7BF3Sj4mkcY8QEuQMqgC7YdPGGuN1lQfbjdyNu9J5RelmuPnZxLkeHcvin1hgUZdE3e0FpWz46ZmGzB8ylog==}
     engines: {node: '>=18'}
     peerDependencies:
       vue: ^3.3.4
@@ -2676,8 +2676,8 @@ packages:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
     engines: {node: '>= 14'}
 
-  ai@5.0.249:
-    resolution: {integrity: sha512-FDiGfFRKRcMMDMhPZ7MEQnCqcXOzDfc1Rlq8TV/2bkbWgwcH0iBmdjQdNfrYH1z3kqgubJdW+L/U2OHIW3mY2w==}
+  ai@5.0.253:
+    resolution: {integrity: sha512-Z784HqUI3GOYiK/CACH9H8A7aqf67cuUnNslS2+//TJZZzCCFuQq6L2socSkIeVGkB8kC4arThXAYl6lWOq/lQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -6789,20 +6789,20 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@2.0.143(zod@4.5.4)':
+  '@ai-sdk/gateway@2.0.147(zod@4.5.4)':
     dependencies:
       '@ai-sdk/provider': 2.0.3
-      '@ai-sdk/provider-utils': 3.0.35(zod@4.5.4)
+      '@ai-sdk/provider-utils': 3.0.36(zod@4.5.4)
       '@vercel/oidc': 3.1.0
       zod: 4.5.4
 
-  '@ai-sdk/openai@2.0.122(zod@4.5.4)':
+  '@ai-sdk/openai@2.0.125(zod@4.5.4)':
     dependencies:
       '@ai-sdk/provider': 2.0.3
-      '@ai-sdk/provider-utils': 3.0.35(zod@4.5.4)
+      '@ai-sdk/provider-utils': 3.0.36(zod@4.5.4)
       zod: 4.5.4
 
-  '@ai-sdk/provider-utils@3.0.35(zod@4.5.4)':
+  '@ai-sdk/provider-utils@3.0.36(zod@4.5.4)':
     dependencies:
       '@ai-sdk/provider': 2.0.3
       '@standard-schema/spec': 1.1.0
@@ -6814,10 +6814,10 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/vue@2.0.249(vue@3.5.40(typescript@5.9.3))(zod@4.5.4)':
+  '@ai-sdk/vue@2.0.253(vue@3.5.40(typescript@5.9.3))(zod@4.5.4)':
     dependencies:
-      '@ai-sdk/provider-utils': 3.0.35(zod@4.5.4)
-      ai: 5.0.249(zod@4.5.4)
+      '@ai-sdk/provider-utils': 3.0.36(zod@4.5.4)
+      ai: 5.0.253(zod@4.5.4)
       swrv: 1.1.0(vue@3.5.40(typescript@5.9.3))
     optionalDependencies:
       vue: 3.5.40(typescript@5.9.3)
@@ -8256,7 +8256,7 @@ snapshots:
       rc9: 3.0.1
       std-env: 4.2.0
 
-  '@nuxt/ui@4.11.0(1b4eac8aa073732cc907371642d83c4d)':
+  '@nuxt/ui@4.11.0(4357dd875db1b9a123c000b7c7f83739)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@iconify/vue': 5.0.1(vue@3.5.40(typescript@5.9.3))
@@ -8326,7 +8326,7 @@ snapshots:
       '@internationalized/date': 3.12.0
       '@internationalized/number': 3.6.5
       '@nuxt/content': 3.16.0(@oxc-project/types@0.143.0)(@valibot/to-json-schema@1.7.1(valibot@1.4.2(typescript@5.9.3)))(better-sqlite3@12.11.1)(esbuild@0.28.0)(magic-string@1.1.0)(magicast@0.5.2)(oxc-parser@0.139.0)(rolldown@1.2.3)(rollup@4.60.2)(valibot@1.4.2(typescript@5.9.3))(vite@8.2.1(esbuild@0.28.0)(jiti@2.7.0)(terser@5.46.0)(yaml@2.9.0))
-      ai: 5.0.249(zod@4.5.4)
+      ai: 5.0.253(zod@4.5.4)
       valibot: 1.4.2(typescript@5.9.3)
       vue-router: 5.2.0(@vue/compiler-sfc@3.5.40)(esbuild@0.28.0)(rolldown@1.2.3)(rollup@4.60.2)(vite@8.2.1(esbuild@0.28.0)(jiti@2.7.0)(terser@5.46.0)(yaml@2.9.0))(vue@3.5.40(typescript@5.9.3))
       zod: 4.5.4
@@ -9894,11 +9894,11 @@ snapshots:
 
   agent-base@7.1.4: {}
 
-  ai@5.0.249(zod@4.5.4):
+  ai@5.0.253(zod@4.5.4):
     dependencies:
-      '@ai-sdk/gateway': 2.0.143(zod@4.5.4)
+      '@ai-sdk/gateway': 2.0.147(zod@4.5.4)
       '@ai-sdk/provider': 2.0.3
-      '@ai-sdk/provider-utils': 3.0.35(zod@4.5.4)
+      '@ai-sdk/provider-utils': 3.0.36(zod@4.5.4)
       '@opentelemetry/api': 1.9.0
       zod: 4.5.4
 
