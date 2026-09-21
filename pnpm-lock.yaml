@@ -12,8 +12,8 @@ importers:
         specifier: ^2.0.127
         version: 2.0.127(zod@4.6.5)
       '@ai-sdk/vue':
-        specifier: ^2.0.257
-        version: 2.0.257(vue@3.5.40(typescript@5.9.3))(zod@4.6.5)
+        specifier: ^2.0.261
+        version: 2.0.261(vue@3.5.40(typescript@5.9.3))(zod@4.6.5)
       '@date-fns/tz':
         specifier: ^1.5.0
         version: 1.5.0
@@ -31,7 +31,7 @@ importers:
         version: 1.11.0(db0@0.3.4(better-sqlite3@12.11.1))(ioredis@5.10.1)(magicast@0.5.2)
       '@nuxt/ui':
         specifier: ^4.11.1
-        version: 4.11.1(e7cd8c489a60d96b5223b108455366b0)
+        version: 4.11.1(0ed328b264d68dc69ea1adc36a35ab2a)
       '@nuxtjs/color-mode':
         specifier: ^3.5.2
         version: 3.5.2(magicast@0.5.2)
@@ -42,8 +42,8 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.1(esbuild@0.28.0)(jiti@2.7.0)(terser@5.46.0)(yaml@2.9.0))
       ai:
-        specifier: ^5.0.257
-        version: 5.0.257(zod@4.6.5)
+        specifier: ^5.0.261
+        version: 5.0.261(zod@4.6.5)
       better-sqlite3:
         specifier: ^12.11.1
         version: 12.11.1
@@ -78,8 +78,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@2.0.151':
-    resolution: {integrity: sha512-FVTfQkpMNrVLsEVkeLwft+f9dJQhi6R0qNkfvKi81nupqDqW6NFXKNnpjslNrM4+VCrxeibBk+6RM5VYYJfecA==}
+  '@ai-sdk/gateway@2.0.153':
+    resolution: {integrity: sha512-USFJ7MIRxR6+PrXT06Q7V+cJf/rJIOmH/KdY84OWCb6+9bhg4xg1pUNxKD28N4F8+VFnX42wfWtqbM3+ZhK+yQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -100,8 +100,8 @@ packages:
     resolution: {integrity: sha512-B0M50w0W43jTzZGyZrNwwaK1M79aKPw6PD/dQhkBR7vkR68yCINWBo2CbBLJrbrqYc46TaiSfsTiT+S9EmVl0w==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/vue@2.0.257':
-    resolution: {integrity: sha512-In8dgwo+4iCooIng+u1gWlQppoOAMteH3Vn24cOmIhFjTbJcy3GsT3thXyNn/Ya7OWbjWEZWxi7V6rIERsH6HQ==}
+  '@ai-sdk/vue@2.0.261':
+    resolution: {integrity: sha512-l1xwrMwHyeW8yPNmjbxvfRrGn1GWJkf6T9Z93bQNFO/VtyU1fkodkQ9CCKGJyVp3oR0rYbvzihQr00bxP+hMhw==}
     engines: {node: '>=18'}
     peerDependencies:
       vue: ^3.3.4
@@ -2679,8 +2679,8 @@ packages:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
     engines: {node: '>= 14'}
 
-  ai@5.0.257:
-    resolution: {integrity: sha512-crucogW9kIN5CEXQw18aKpeP6ACugChauNW1kzTFXGuxzL3eVFIY3Qh5x9a6AVfVypMW5wmNT9Z25Y4fNpJSfQ==}
+  ai@5.0.261:
+    resolution: {integrity: sha512-UuEsaPUvebUCANmeduJJXfTfY5/NVlWCTFfvuA8goYB+Edu9aKlExVmpMm1VU9d3j2BDkUcfdG5+aUaPr/AWbg==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -6795,7 +6795,7 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@2.0.151(zod@4.6.5)':
+  '@ai-sdk/gateway@2.0.153(zod@4.6.5)':
     dependencies:
       '@ai-sdk/provider': 2.0.4
       '@ai-sdk/provider-utils': 3.0.37(zod@4.6.5)
@@ -6820,10 +6820,10 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/vue@2.0.257(vue@3.5.40(typescript@5.9.3))(zod@4.6.5)':
+  '@ai-sdk/vue@2.0.261(vue@3.5.40(typescript@5.9.3))(zod@4.6.5)':
     dependencies:
       '@ai-sdk/provider-utils': 3.0.37(zod@4.6.5)
-      ai: 5.0.257(zod@4.6.5)
+      ai: 5.0.261(zod@4.6.5)
       swrv: 1.1.0(vue@3.5.40(typescript@5.9.3))
     optionalDependencies:
       vue: 3.5.40(typescript@5.9.3)
@@ -8282,7 +8282,7 @@ snapshots:
       rc9: 3.0.1
       std-env: 4.2.0
 
-  '@nuxt/ui@4.11.1(e7cd8c489a60d96b5223b108455366b0)':
+  '@nuxt/ui@4.11.1(0ed328b264d68dc69ea1adc36a35ab2a)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@iconify/vue': 5.0.1(vue@3.5.40(typescript@5.9.3))
@@ -8352,7 +8352,7 @@ snapshots:
       '@internationalized/date': 3.12.0
       '@internationalized/number': 3.6.5
       '@nuxt/content': 3.16.0(@oxc-project/types@0.143.0)(@valibot/to-json-schema@1.7.1(valibot@1.4.2(typescript@5.9.3)))(better-sqlite3@12.11.1)(esbuild@0.28.0)(magic-string@1.1.0)(magicast@0.5.2)(oxc-parser@0.139.0)(rolldown@1.2.3)(rollup@4.60.2)(valibot@1.4.2(typescript@5.9.3))(vite@8.2.1(esbuild@0.28.0)(jiti@2.7.0)(terser@5.46.0)(yaml@2.9.0))
-      ai: 5.0.257(zod@4.6.5)
+      ai: 5.0.261(zod@4.6.5)
       valibot: 1.4.2(typescript@5.9.3)
       vue-router: 5.2.0(@vue/compiler-sfc@3.5.40)(esbuild@0.28.0)(rolldown@1.2.3)(rollup@4.60.2)(vite@8.2.1(esbuild@0.28.0)(jiti@2.7.0)(terser@5.46.0)(yaml@2.9.0))(vue@3.5.40(typescript@5.9.3))
       zod: 4.6.5
@@ -9920,9 +9920,9 @@ snapshots:
 
   agent-base@7.1.4: {}
 
-  ai@5.0.257(zod@4.6.5):
+  ai@5.0.261(zod@4.6.5):
     dependencies:
-      '@ai-sdk/gateway': 2.0.151(zod@4.6.5)
+      '@ai-sdk/gateway': 2.0.153(zod@4.6.5)
       '@ai-sdk/provider': 2.0.4
       '@ai-sdk/provider-utils': 3.0.37(zod@4.6.5)
       '@opentelemetry/api': 1.9.0
