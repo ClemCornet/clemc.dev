@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.127",
-    "@ai-sdk/vue": "^2.0.257",
+    "@ai-sdk/vue": "^2.0.261",
     "@date-fns/tz": "^1.5.0",
     "@iconify-json/iconoir": "^1.2.11",
     "@nuxt/content": "^3.16.0",
@@ -24,7 +24,7 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
     "@tailwindcss/vite": "^4.3.3",
-    "ai": "^5.0.257",
+    "ai": "^5.0.261",
     "better-sqlite3": "^12.11.1",
     "date-fns": "^4.4.0",
     "eslint": "^9.39.5",
